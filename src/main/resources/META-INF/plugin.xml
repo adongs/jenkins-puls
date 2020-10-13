@@ -1,0 +1,56 @@
+<idea-plugin require-restart="true">
+    <id>com.adongs.jenkins-puls</id>
+    <name>jenkins-plug</name>
+    <version>1.0.0</version>
+    <vendor email="1286630069@@qq.com" url="http://adongs.com">阿东</vendor>
+
+    <description><![CDATA[
+      一个简单的jenkins插件,不需要在jenkins中配置任何东西<br>
+      只要在本插件登录,即可控制jenkins的发版
+    ]]></description>
+
+    <change-notes><![CDATA[
+      1.实现jenkins的列表展示<br>
+      2.提供jenkins的发版与结束<br>
+      3.提供发版日志信息<br>
+    ]]>
+    </change-notes>
+    <idea-version since-build="173.0"/>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationConfigurable
+                id="jenkinspuls.id"
+                displayName="Jenkins plug"
+                instance="com.adongs.setting.SettingConfigurable"/>
+        <applicationService serviceInterface="com.adongs.setting.PersistentConfig"
+                            serviceImplementation="com.adongs.setting.PersistentConfig"/>
+        <toolWindow id="Jenkins task"
+                    icon="Icons.JENKINS"
+                    anchor="right"
+                    factoryClass="com.adongs.windows.TaskWindow"/>
+    </extensions>
+
+    <actions>
+        <action id="jenkins.refresh" class="com.adongs.action.RefreshAction"
+                text="刷新" description="刷新" icon="Icons.REFRESH"></action>
+        <action id="jenkins.login" class="com.adongs.action.LoginAction"
+                text="用户登录" description="用户登录" icon="Icons.LOGIN"></action>
+        <action id="jenkins.logout" class="com.adongs.action.LogoutAction"
+                text="登出" description="登出" icon="Icons.LOGOUT"></action>
+        <action id="jenkins.setting" class="com.adongs.action.SettingAction"
+                text="设置" description="设置" icon="Icons.SETTING"></action>
+        <action id="jenkins.help" class="com.adongs.action.HelpAction"
+                text="帮助" description="帮助" icon="Icons.HELP"></action>
+        <group id="jenkins.group">
+            <reference id = "jenkins.refresh"/>
+            <reference id = "jenkins.login"/>
+            <reference id = "jenkins.logout"/>
+            <reference id = "jenkins.setting"/>
+            <reference id = "jenkins.help"/>
+        </group>
+    </actions>
+</idea-plugin>

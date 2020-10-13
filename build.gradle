@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.22'
+}
+
+group 'com.adongs'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile ('com.squareup.okhttp3:okhttp:4.8.1'){
+        exclude module: 'slf4j-api'
+    }
+    compile ('cn.wanghaomiao:JsoupXpath:2.3.2'){
+        exclude module: 'slf4j-api'
+    }
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    pluginName 'jenkins-puls'
+    type 'UI'
+    version '2020.2.2'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+

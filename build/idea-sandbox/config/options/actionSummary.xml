@@ -1,0 +1,27 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$SelectAll">
+        <ActionSummary times="6" last="1601474430483" />
+      </entry>
+      <entry key="$Undo">
+        <ActionSummary times="1" last="1601431258399" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="54" last="1601474442216" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="10" last="1601453740006" />
+      </entry>
+      <entry key="WelcomeScreen.CreateNewProject">
+        <ActionSummary times="1" last="1601272660546" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="1" last="1601272655143" />
+      </entry>
+      <entry key="com.intellij.ide.ReopenProjectAction">
+        <ActionSummary times="3" last="1602479224239" />
+      </entry>
+    </data>
+  </component>
+</application>

@@ -1,0 +1,22 @@
+<application>
+  <component name="JenkinsPulsPersistentConfig">
+    <option name="initConfig">
+      <JenkinsConfig>
+        <option name="accountConfig">
+          <AccountConfig>
+            <option name="name" value="yudong" />
+            <option name="serverUrl" value="http://jenkins.huiyuntong.com.cn" />
+          </AccountConfig>
+        </option>
+        <option name="timedTaskConfig">
+          <TimedTaskConfig>
+            <option name="queueTime" value="2" />
+            <option name="releaseTime" value="3" />
+            <option name="taskListTime" value="100" />
+          </TimedTaskConfig>
+        </option>
+        <option name="version" value="2.169" />
+      </JenkinsConfig>
+    </option>
+  </component>
+</application>
