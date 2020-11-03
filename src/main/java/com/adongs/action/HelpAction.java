@@ -18,6 +18,6 @@ import java.net.URI;
 public class HelpAction extends AnAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent anActionEvent) {
-        BrowserUtil.browse("");
+        BrowserUtil.browse("https://github.com/adongs/jenkins-puls");
     }
 }

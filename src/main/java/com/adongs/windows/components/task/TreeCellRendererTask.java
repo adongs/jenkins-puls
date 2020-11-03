@@ -1,7 +1,6 @@
 package com.adongs.windows.components.task;
 
 import com.adongs.event.ConstructMouseListener;
-import com.adongs.event.NodeConstructMouseListener;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.swing.*;
@@ -37,11 +36,9 @@ public class TreeCellRendererTask implements TreeCellRenderer {
              jPanel.add(status);
              final JLabel name = new JLabel(taskTreeNode.getName());
              jPanel.add(name);
-             if (!StringUtils.isEmpty(taskTreeNode.getReleaseUrl())) {
-                 final JLabel releaseIcon = new JLabel(taskTreeNode.getReleaseIcon());
-                 releaseIcon.addMouseListener(new ConstructMouseListener(taskTreeNode.getReleaseUrl()));
-                 jPanel.add(releaseIcon);
-                 jPanel.addMouseListener(new NodeConstructMouseListener(taskTreeNode.getReleaseUrl()));
+             final Icon releaseIcon = taskTreeNode.getReleaseIcon();
+             if (releaseIcon!=null){
+                 jPanel.add(new JLabel(releaseIcon));
              }
              return jPanel;
          }

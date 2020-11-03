@@ -47,8 +47,6 @@
                 text="帮助" description="帮助" icon="Icons.HELP"></action>
         <group id="jenkins.group">
             <reference id = "jenkins.refresh"/>
-            <reference id = "jenkins.login"/>
-            <reference id = "jenkins.logout"/>
             <reference id = "jenkins.setting"/>
             <reference id = "jenkins.help"/>
         </group>

@@ -2,25 +2,28 @@
   <component name="ActionsLocalSummary">
     <data>
       <entry key="$SelectAll">
-        <ActionSummary times="6" last="1601474430483" />
-      </entry>
-      <entry key="$Undo">
-        <ActionSummary times="1" last="1601431258399" />
+        <ActionSummary times="3" last="1603878923556" />
       </entry>
       <entry key="EditorBackSpace">
-        <ActionSummary times="54" last="1601474442216" />
+        <ActionSummary times="51" last="1603880276599" />
+      </entry>
+      <entry key="EditorCopy">
+        <ActionSummary times="1" last="1603849163599" />
       </entry>
       <entry key="EditorPaste">
-        <ActionSummary times="10" last="1601453740006" />
-      </entry>
-      <entry key="WelcomeScreen.CreateNewProject">
-        <ActionSummary times="1" last="1601272660546" />
+        <ActionSummary times="27" last="1603880271748" />
       </entry>
       <entry key="WelcomeScreen.OpenProject">
-        <ActionSummary times="1" last="1601272655143" />
+        <ActionSummary times="1" last="1603790430987" />
       </entry>
       <entry key="com.intellij.ide.ReopenProjectAction">
-        <ActionSummary times="3" last="1602479224239" />
+        <ActionSummary times="13" last="1603871722201" />
+      </entry>
+      <entry key="com.intellij.notification.EventLogConsole$ClearLogAction">
+        <ActionSummary times="3" last="1603871809545" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+        <ActionSummary times="8" last="1603871810385" />
       </entry>
     </data>
   </component>

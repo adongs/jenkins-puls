@@ -1,5 +1,8 @@
 package com.adongs.event;
 
+import com.adongs.windows.components.construct.ConstructList;
+
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -22,7 +25,9 @@ public class ConstructMouseListener extends MouseAdapter {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        final ConstructList constructList = (ConstructList)e.getComponent();
+        final int selectedIndex = constructList.getSelectedIndex();
+        final Object selectedValue = constructList.getSelectedValue();
         super.mouseClicked(e);
     }
 }

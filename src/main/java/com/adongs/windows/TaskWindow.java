@@ -1,26 +1,30 @@
 package com.adongs.windows;
 
-import com.adongs.config.JenkinsConfig;
-import com.adongs.jenkinsapi.JenkinsApi;
-import com.adongs.manager.HttpManager;
+import com.adongs.JenkinsClient;
+import com.adongs.config.AccountConfig;
+import com.adongs.http.HttpReques;
+import com.adongs.manager.JenkinsClientManager;
 import com.adongs.manager.WindowManager;
+import com.adongs.model.TestLoginResult;
 import com.adongs.setting.PersistentConfig;
 import com.adongs.windows.components.construct.ConstructList;
 import com.adongs.windows.components.task.TaskList;
+import com.adongs.windows.components.waiting.WaitingList;
 import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.actionSystem.ActionToolbar;
 import com.intellij.openapi.actionSystem.DefaultActionGroup;
+import com.intellij.openapi.project.DumbAware;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
-import com.intellij.ui.TreeSpeedSearch;
+import com.intellij.ui.components.JBList;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
-import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
 
 /**
  * @author yudong
@@ -28,7 +32,7 @@ import javax.swing.tree.DefaultTreeModel;
  * @date 2020/9/28 2:46 下午
  * @modified By
  */
-public class TaskWindow implements ToolWindowFactory {
+public class TaskWindow implements ToolWindowFactory, DumbAware {
     private JPanel rootJpanel;
     private JPanel actionList;
     private JTabbedPane taskList;
@@ -36,29 +40,40 @@ public class TaskWindow implements ToolWindowFactory {
     private JScrollPane mineJScrollPane;
     private JScrollPane waitingReleaseJScrollPane;
     private JScrollPane releaseJScrollPane;
+    private TaskList globalList;
+    private TaskList mineList;
+    private WaitingList waitingList;
+    private ConstructList constructList;
 
     public TaskWindow() {
+        init();
         WindowManager.registered(this);
+    }
+
+    public void init(){
         final ActionManager actionManager = ActionManager.getInstance();
         ActionToolbar findToolbar = actionManager.createActionToolbar("",
                 (DefaultActionGroup) actionManager.getAction("jenkins.group"),
                 true);
         actionList.add(findToolbar.getComponent());
-        final JenkinsConfig config = PersistentConfig.getInstance().getConfig();
-        if (config!=null){
-            JenkinsApi jenkinsApi = new JenkinsApi(config);
-            final boolean login = jenkinsApi.login();
-            if (login){
-                HttpManager.registered(jenkinsApi);
+        final PersistentConfig persistentConfig = PersistentConfig.getInstance();
+        final AccountConfig account = persistentConfig.account();
+        if (account!=null) {
+            final TestLoginResult result = HttpReques.testLogin(account.getServerUrl(), account.getName(), persistentConfig.password().toCharArray());
+            if (result.isOk()){
+                JenkinsClientManager.registered(new JenkinsClient(persistentConfig,account.getServerUrl(),account.getName(),persistentConfig.password().toCharArray()));
             }
         }
-        final JenkinsApi jenkinsApi = HttpManager.get();
-        if (jenkinsApi!=null) {
-            globalJScrollPane.setViewportView( new TaskList(jenkinsApi.globalTaskListTreeNode()));
-            mineJScrollPane.setViewportView( new TaskList(jenkinsApi.mineTaskListTreeNode()));
-            releaseJScrollPane.setViewportView( new ConstructList(jenkinsApi.underConstruction()));
-        }
+        globalList =  new TaskList();
+        globalJScrollPane.setViewportView(globalList);
+        mineList = new TaskList("myview");
+        mineJScrollPane.setViewportView(mineList);
+        waitingList = new WaitingList();
+        waitingReleaseJScrollPane.setViewportView(waitingList);
+        constructList = new ConstructList();
+        releaseJScrollPane.setViewportView(constructList);
     }
+
 
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
@@ -67,6 +82,26 @@ public class TaskWindow implements ToolWindowFactory {
         Content content = contentFactory.createContent(taskList.root(), "", false);
         toolWindow.getContentManager().addContent(content);
     }
+
+
+    /**
+     * 更新所有数据
+     */
+    public void updateAll(){
+        if (globalList!=null){
+            globalList.update();
+        }
+        if (mineList!=null){
+            mineList.update();
+        }
+        if (waitingList!=null){
+            waitingList.update();
+        }
+        if (constructList!=null){
+            constructList.update();
+        }
+    }
+
 
     /**
      * 根面板

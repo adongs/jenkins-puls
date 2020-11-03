@@ -1,5 +1,6 @@
 package com.adongs.action;
 
+import com.adongs.manager.WindowManager;
 import com.adongs.windows.LoginDialogWrapper;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -16,7 +17,8 @@ public class LoginAction extends AnAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent anActionEvent) {
         final LoginDialogWrapper loginDialogWrapper = new LoginDialogWrapper();
-        if(loginDialogWrapper.showAndGet()){
+        loginDialogWrapper.show();
+        if(loginDialogWrapper.isOK()){
             //获得登录的用户名,和密码
             final String name = loginDialogWrapper.loginName();
             final String password = loginDialogWrapper.loginPassword();

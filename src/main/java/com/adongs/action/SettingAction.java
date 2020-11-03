@@ -15,6 +15,6 @@ import org.jetbrains.annotations.NotNull;
 public class SettingAction extends AnAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent anActionEvent) {
-        ShowSettingsUtil.getInstance().showSettingsDialog(anActionEvent.getProject(),"");
+        ShowSettingsUtil.getInstance().showSettingsDialog(anActionEvent.getProject(),"jenkins plugin");
     }
 }

@@ -1,16 +1,20 @@
 package com.adongs.event;
 
-import com.adongs.manager.HttpManager;
+import com.adongs.JenkinsClient;
+import com.adongs.api.JobAction;
+import com.adongs.manager.JenkinsClientManager;
+import com.adongs.manager.WindowManager;
+import com.adongs.windows.TaskWindow;
 import com.adongs.windows.components.task.TaskTreeNode;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.swing.*;
 import javax.swing.tree.TreePath;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
+ * 双击发版项目
  * @author yudong
  * @version 1.0
  * @date 2020/10/4 8:32 下午
@@ -28,9 +32,17 @@ public class TreeReleaseMouseListener extends MouseAdapter {
                 final Object lastPathComponent = selPath.getLastPathComponent();
                 if (lastPathComponent instanceof TaskTreeNode) {
                     final TaskTreeNode taskTreeNode = (TaskTreeNode) lastPathComponent;
-                    if (!StringUtils.isEmpty(taskTreeNode.getReleaseUrl())) {
-                        HttpManager.get().construct(taskTreeNode.getReleaseUrl());
-                    }
+                     if (taskTreeNode.getJob().isAllowBuild()){
+                         final JenkinsClient jenkinsClient = JenkinsClientManager.get();
+                         if (jenkinsClient!=null){
+                             final JobAction jobAction = jenkinsClient.getJobAction();
+                             final boolean build = jobAction.build(taskTreeNode.getName());
+                             if (build){
+                                 final TaskWindow taskWindow = WindowManager.get(TaskWindow.class);
+                                 taskWindow.updateAll();
+                             }
+                         }
+                     }
                 }
             }
         }

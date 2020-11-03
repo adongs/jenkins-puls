@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.22'
+    id 'org.jetbrains.intellij' version '0.5.0'
 }
 
 group 'com.adongs'
@@ -13,11 +13,11 @@ repositories {
 }
 
 dependencies {
-    compile ('com.squareup.okhttp3:okhttp:4.8.1'){
-        exclude module: 'slf4j-api'
-    }
-    compile ('cn.wanghaomiao:JsoupXpath:2.3.2'){
-        exclude module: 'slf4j-api'
+    compile files("src/main/resources/lib/jenkins-api-1.0.jar")
+    compile 'com.squareup.okhttp3:okhttp:4.9.0'
+    compile 'com.alibaba:fastjson:1.2.74'
+    compile('cn.wanghaomiao:JsoupXpath:2.3.2'){
+        exclude  module: 'slf4j-api'
     }
 }
 

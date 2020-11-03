@@ -1,18 +1,19 @@
 package com.adongs.windows;
 
+import com.adongs.JenkinsClient;
+import com.adongs.api.UserAction;
 import com.adongs.config.AccountConfig;
-import com.adongs.config.JenkinsConfig;
-import com.adongs.config.RuleConfig;
-import com.adongs.config.TimedTaskConfig;
 import com.adongs.event.SettingTestEvent;
-import com.adongs.jenkinsapi.JenkinsApi;
-import com.adongs.manager.HttpManager;
+import com.adongs.http.HttpReques;
+import com.adongs.manager.JenkinsClientManager;
 import com.adongs.manager.WindowManager;
+import com.adongs.model.TestLoginResult;
 import com.adongs.setting.PersistentConfig;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.swing.*;
-import java.util.Map;
-import java.util.Set;
+import java.awt.*;
+import java.util.Optional;
 
 /**
  * 设置页面
@@ -23,123 +24,94 @@ import java.util.Set;
  */
 public class SettingWindow {
     private JPanel rootJpanel;
-    private JComboBox serviceVersion;
     private JTextField serverUrl;
     private JTextField loginName;
     private JPasswordField password;
-    private JSpinner taskListRefreshTime;
-    private JSpinner processingTaskListRefreshTime;
-    private JSpinner queueTaskListRefreshTime;
     private JButton testButton;
     private JLabel errorMessage;
 
     public SettingWindow() {
-        testButton.addActionListener(new SettingTestEvent());
-        final JenkinsConfig config = PersistentConfig.getInstance().getInitConfig();
-        if (config!=null) {
-            final AccountConfig accountConfig = config.getAccountConfig();
-            if (accountConfig!=null){
-                serverUrl.setText(accountConfig.getServerUrl());
-                loginName.setText(accountConfig.getName());
-                password.setText(accountConfig.getPassword());
-            }
-            final TimedTaskConfig timedTaskConfig = config.getTimedTaskConfig();
-            if (timedTaskConfig!=null) {
-                taskListRefreshTime.setValue(timedTaskConfig.getTaskListTime());
-                queueTaskListRefreshTime.setValue(timedTaskConfig.getQueueTime());
-                processingTaskListRefreshTime.setValue(timedTaskConfig.getReleaseTime());
-            }
-            final Set<String> versions = config.getRules().keySet();
-            for (String version : versions) {
-                serviceVersion.addItem(version);
-            }
-        }else{
-            serviceVersion.addItem(RuleConfig.DEFAULF_.getVersion());
-        }
+        init();
         WindowManager.registered(this);
     }
 
-    public JPanel getRootJpanel() {
-        return rootJpanel;
+    /**
+     * 初始化
+     */
+    private void init(){
+        testButton.addActionListener(new SettingTestEvent());
+        final PersistentConfig persistentConfig = PersistentConfig.getInstance();
+        final AccountConfig accountConfig = persistentConfig.account();
+        if (accountConfig!=null){
+            serverUrl.setText(accountConfig.getServerUrl());
+            loginName.setText(accountConfig.getName());
+        }
+        final String password = persistentConfig.password();
+        if (!StringUtils.isEmpty(password)){
+            this.password.setText(password);
+        }
     }
 
-    public JComboBox getServiceVersion() {
-        return serviceVersion;
-    }
 
-    public JTextField getServerUrl() {
-        return serverUrl;
-    }
-
-    public JTextField getLoginName() {
-        return loginName;
-    }
-
-    public JPasswordField getPassword() {
-        return password;
-    }
-
-    public JSpinner getTaskListRefreshTime() {
-        return taskListRefreshTime;
-    }
-
-    public JSpinner getProcessingTaskListRefreshTime() {
-        return processingTaskListRefreshTime;
-    }
-
-    public JSpinner getQueueTaskListRefreshTime() {
-        return queueTaskListRefreshTime;
-    }
-
-    public JButton getTestButton() {
-        return testButton;
-    }
-
-    public JLabel getErrorMessage() {
-        return errorMessage;
-    }
 
     public boolean isModified(){
-        final JenkinsConfig config = PersistentConfig.getInstance().getInitConfig();
-        if (config == null){return true;}
-        JenkinsConfig jenkinsConfig = new JenkinsConfig();
-        final String outPassword = config.getAccountConfig().getPassword();
-        jenkinsConfig.setAccountConfig(getAccountConfig());
-        jenkinsConfig.setTimedTaskConfig(getTimedTaskConfig());
-        jenkinsConfig.setVersion(getVersion());
-        if (config.equals(jenkinsConfig) && outPassword.equals(jenkinsConfig.getAccountConfig().getPassword())){
-            return false;
-        }else{
+        final PersistentConfig persistentConfig = PersistentConfig.getInstance();
+        final AccountConfig account = persistentConfig.account();
+        if (account == null){
             return true;
         }
+        final boolean equals = account.equals(new AccountConfig(loginName.getText(), serverUrl.getText()));
+        if (!equals){return true;}
+        final char[] pwd = password.getPassword();
+        if (pwd == null || pwd.length==0){return true;}
+        if (!new String(pwd).equals(persistentConfig.password())){return true;}
+        return false;
     }
 
     public void apply(){
-        JenkinsConfig jenkinsConfig = new JenkinsConfig();
-        jenkinsConfig.setAccountConfig(getAccountConfig());
-        jenkinsConfig.setTimedTaskConfig(getTimedTaskConfig());
-        jenkinsConfig.setVersion(getVersion());
-        PersistentConfig.getInstance().setInitConfig(jenkinsConfig);
-        JenkinsApi jenkinsApi = new JenkinsApi(jenkinsConfig);
-        final boolean login = jenkinsApi.login();
-        if (login){
-            HttpManager.registered(jenkinsApi);
+        final TaskWindow taskWindow = WindowManager.get(TaskWindow.class);
+        final PersistentConfig persistentConfig = PersistentConfig.getInstance();
+        final String url = Optional.ofNullable(serverUrl.getText()).orElse("");
+        final String name = Optional.ofNullable(loginName.getText()).orElse("");
+        final char[] password = this.password.getPassword();
+        AccountConfig accountConfig = new AccountConfig(name,url);
+        persistentConfig.save(accountConfig,password);
+       if (!StringUtils.isEmpty(url) && !StringUtils.isEmpty(name) &&  (password!=null && password.length>0)){
+           final TestLoginResult result = HttpReques.testLogin(url, name, password);
+           if (result.isOk()){
+               final JenkinsClient jenkinsClient = JenkinsClientManager.get();
+               if (jenkinsClient!=null){
+                   jenkinsClient.getUserAction().logout();
+               }
+               final PersistentConfig config = PersistentConfig.getInstance();
+               final JenkinsClient newJenkinsClient = new JenkinsClient(config, url, name, password);
+               JenkinsClientManager.registered(newJenkinsClient);
+               taskWindow.updateAll();
+               return;
+           }
+       }
+        JenkinsClientManager.registered(null);
+        taskWindow.updateAll();
+    }
+
+    /**
+     * 测试登录
+     */
+    public void testLogin(){
+        final String url = Optional.ofNullable(serverUrl.getText()).orElse("");
+        final String name = Optional.ofNullable(loginName.getText()).orElse("");
+        final char[] password = this.password.getPassword();
+        if (!StringUtils.isEmpty(url) && !StringUtils.isEmpty(name) &&  (password!=null && password.length>0)){
+            final TestLoginResult result = HttpReques.testLogin(url, name, password);
+            errorMessage.setForeground(result.isOk()?Color.GREEN:Color.RED);
+            errorMessage.setText(result.getMsg());
         }else{
-            HttpManager.registered(null);
+            errorMessage.setForeground(Color.RED);
+            errorMessage.setText("参数不完整");
         }
-
     }
 
-    private AccountConfig getAccountConfig(){
-        return new AccountConfig(loginName.getText(),new String(password.getPassword()),serverUrl.getText());
+    public  JPanel getRootJpanel(){
+        return rootJpanel;
     }
-
-    private TimedTaskConfig getTimedTaskConfig(){
-        return new TimedTaskConfig((int)taskListRefreshTime.getValue(),(int)queueTaskListRefreshTime.getValue(),(int)processingTaskListRefreshTime.getValue());
-    }
-
-    private String getVersion(){
-       return  serviceVersion.getSelectedItem().toString();
-    }
-
 }

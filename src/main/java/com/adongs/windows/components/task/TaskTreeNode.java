@@ -1,5 +1,6 @@
 package com.adongs.windows.components.task;
 
+import com.adongs.model.Job;
 import com.google.common.collect.ImmutableMap;
 import icons.Icons;
 import org.apache.commons.lang3.StringUtils;
@@ -17,30 +18,30 @@ import java.util.Map;
 public class TaskTreeNode extends DefaultMutableTreeNode {
 
     private final static ImmutableMap<String, Icon> START_ICON = ImmutableMap.<String, Icon>builder()
-            .put("Success", Icons.SUCCESS)
-            .put("Failed",Icons.FAILED)
-            .put("Unstable",Icons.UNSTABLE)
-            .put("Not built",Icons.NOTBUILT)
-            .put("Aborted",Icons.TERMINATED)
-            .put("In progress",Icons.BUILDING)
+            .put("4", Icons.SUCCESS)
+            .put("0",Icons.FAILED)
+            .put("2",Icons.UNSTABLE)
+            .put("12",Icons.NOTBUILT)
+            .put("10",Icons.TERMINATED)
+            .put("5",Icons.BUILDING)
             .build();
 
     private final static ImmutableMap<String,String> START_DESCRIPTION =  ImmutableMap.<String,String>builder()
-            .put("Success", "成功")
-            .put("Failed","失败")
-            .put("Unstable","不稳定")
-            .put("Not built","未构建")
-            .put("Aborted","已终止")
-            .put("In progress","构建中")
+            .put("4", "成功")
+            .put("0","失败")
+            .put("2","不稳定")
+            .put("12","未构建")
+            .put("10","已终止")
+            .put("5","构建中")
             .build();
 
 
-    public TaskTreeNode(String status, String name,String lastReleaseTime, String releaseUrl) {
-        this.status = START_ICON.getOrDefault(status,Icons.UNKNOWN);
-        this.title ="上次构建: "+START_DESCRIPTION.getOrDefault(status,"未知")+"<br/>    构建时间: "+lastReleaseTime;
-        this.name = name;
-        this.releaseUrl = releaseUrl;
-        if (!StringUtils.isEmpty(this.releaseUrl)){this.releaseIcon = Icons.RELEASE;}
+    public TaskTreeNode(Job job) {
+        this.status = START_ICON.getOrDefault(job.getStatus(),Icons.UNKNOWN);
+        this.title ="上次构建: "+START_DESCRIPTION.getOrDefault(job.getStatus(),"未知")+"<br/>    构建时间: "+job.getBuildSuccessDatatime();
+        this.name = job.getName();
+        if (job.isAllowBuild()){this.releaseIcon = Icons.RELEASE;}
+        this.job = job;
     }
 
     private Icon status;
@@ -49,10 +50,9 @@ public class TaskTreeNode extends DefaultMutableTreeNode {
 
     private String name;
 
-
     private Icon releaseIcon;
 
-    private String releaseUrl;
+    private Job job;
 
 
     public Icon getStatus() {
@@ -79,13 +79,6 @@ public class TaskTreeNode extends DefaultMutableTreeNode {
         this.releaseIcon = releaseIcon;
     }
 
-    public String getReleaseUrl() {
-        return releaseUrl;
-    }
-
-    public void setReleaseUrl(String releaseUrl) {
-        this.releaseUrl = releaseUrl;
-    }
 
     public String getTitle() {
         return title;
@@ -93,6 +86,14 @@ public class TaskTreeNode extends DefaultMutableTreeNode {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Job getJob() {
+        return job;
+    }
+
+    public void setJob(Job job) {
+        this.job = job;
     }
 
     @Override

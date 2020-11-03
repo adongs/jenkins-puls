@@ -1,7 +1,6 @@
 package com.adongs.event;
 
 import com.adongs.config.AccountConfig;
-import com.adongs.jenkinsapi.HttpReques;
 import com.adongs.manager.WindowManager;
 import com.adongs.windows.SettingWindow;
 
@@ -18,23 +17,10 @@ import java.awt.event.ActionListener;
  * @modified By
  */
 public class SettingTestEvent implements ActionListener {
+
     @Override
     public void actionPerformed(ActionEvent e) {
         final SettingWindow settingWindow = WindowManager.get(SettingWindow.class);
-        String serverUrl = settingWindow.getServerUrl().getText();
-        String name = settingWindow.getLoginName().getText();
-        String password = new String(settingWindow.getPassword().getPassword());
-        AccountConfig config = new AccountConfig(name,password,serverUrl);
-        final HttpReques httpReques = new HttpReques(config);
-        try {
-             httpReques.login();
-            final JLabel errorMessage = settingWindow.getErrorMessage();
-            errorMessage.setForeground(Color.GREEN);
-            errorMessage.setText("成功");
-        } catch (Exception ioException) {
-            final JLabel errorMessage = settingWindow.getErrorMessage();
-            errorMessage.setForeground(Color.RED);
-            errorMessage.setText(ioException.getMessage());
-        }
+        settingWindow.testLogin();
     }
 }

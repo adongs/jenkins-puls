@@ -1,6 +1,12 @@
 package com.adongs.setting;
 
-import com.adongs.config.JenkinsConfig;
+import com.adongs.JenkinsClient;
+import com.adongs.config.AccountConfig;
+import com.adongs.config.Token;
+import com.adongs.http.TokenSave;
+import com.intellij.credentialStore.CredentialAttributes;
+import com.intellij.credentialStore.CredentialAttributesKt;
+import com.intellij.credentialStore.Credentials;
 import com.intellij.ide.passwordSafe.PasswordSafe;
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;
@@ -9,6 +15,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author yudong
@@ -17,9 +24,14 @@ import java.util.Map;
  * @modified By
  */
 @State(name = "JenkinsPulsPersistentConfig", storages = {@Storage(value = "jenkins-puls.xml", roamingType = RoamingType.DISABLED)})
-public class PersistentConfig implements PersistentStateComponent<PersistentConfig> {
+public class PersistentConfig implements PersistentStateComponent<PersistentConfig>,TokenSave {
+    private final static String SUBSYSTEM = "idea-jenkins-puls";
+    private final static String KEY_PASSWORD = "password";
+    private final static String KEY_TOKEN = "token";
+    private long expireDate = 0;
 
-    private final Map<String, JenkinsConfig> initConfig = new HashMap<>();
+    private AccountConfig accountConfig;
+
 
     @Nullable
     @Override
@@ -36,24 +48,64 @@ public class PersistentConfig implements PersistentStateComponent<PersistentConf
         return ServiceManager.getService(PersistentConfig.class);
     }
 
-    public JenkinsConfig getInitConfig() {
-        final JenkinsConfig jenkinsConfig = initConfig.get(null);
-        if (jenkinsConfig!=null){
+    public void save(AccountConfig accountConfig,char [] password){
+        if (accountConfig!=null){
+            this.accountConfig = accountConfig;
         }
-        return jenkinsConfig;
-    }
-
-    public JenkinsConfig getConfig() {
-        JenkinsConfig config = initConfig.get(null);
-        if (config == null) {
-            throw new UnsupportedOperationException("not configured");
-        } else {
-            return config;
+        if (password!=null && password.length>0){
+            savePassword(password);
         }
     }
 
-    public void setInitConfig(JenkinsConfig config) {
-        initConfig.put(null, config);
+    public AccountConfig account(){
+       return accountConfig;
     }
 
+    public void savePassword(@NotNull char [] password){
+        if (password!=null && password.length>0) {
+            final CredentialAttributes attributes = new CredentialAttributes(CredentialAttributesKt.generateServiceName(SUBSYSTEM, KEY_PASSWORD));
+            Credentials credentials = new Credentials(KEY_PASSWORD, password);
+            PasswordSafe.getInstance().set(attributes, credentials);
+        }
+    }
+
+    public String password(){
+        final CredentialAttributes attributes = new CredentialAttributes(CredentialAttributesKt.generateServiceName(SUBSYSTEM, KEY_PASSWORD));
+        return PasswordSafe.getInstance().getPassword(attributes);
+    }
+
+    @Override
+    public String token() {
+        if (expireDate>System.currentTimeMillis()) {
+            final CredentialAttributes attributes = new CredentialAttributes(CredentialAttributesKt.generateServiceName(SUBSYSTEM, KEY_TOKEN));
+            return PasswordSafe.getInstance().getPassword(attributes);
+        }
+       return "";
+    }
+
+    @Override
+    public void save(String s, long l, TimeUnit timeUnit) {
+        final CredentialAttributes attributes = new CredentialAttributes(CredentialAttributesKt.generateServiceName(SUBSYSTEM, KEY_TOKEN));
+        Credentials credentials = new Credentials(KEY_TOKEN,s);
+        PasswordSafe.getInstance().set(attributes, credentials);
+        expireDate = System.currentTimeMillis() + timeUnit.toMillis(l);
+    }
+
+    @Override
+    public long time() {
+        return expireDate;
+    }
+
+    @Override
+    public boolean expired() {
+      return expireDate<System.currentTimeMillis();
+    }
+
+    @Override
+    public void delete() {
+        final CredentialAttributes attributes = new CredentialAttributes(CredentialAttributesKt.generateServiceName(SUBSYSTEM, KEY_TOKEN));
+        Credentials credentials = new Credentials(KEY_TOKEN,"");
+        PasswordSafe.getInstance().set(attributes, credentials);
+        expireDate = 0;
+    }
 }
