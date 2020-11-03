@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap" />
+  <configurable id="jenkinspuls.id" configurable_name="Jenkins plug">
+    <option name="jenkins" hit="Jenkins plug" />
+    <option name="plug" hit="Jenkins plug" />
+  </configurable>
+</options>
+

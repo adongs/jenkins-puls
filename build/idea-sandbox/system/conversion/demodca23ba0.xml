@@ -1,0 +1,58 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" timestamp="1598855878223" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_aop_5_1_17_RELEASE.xml" timestamp="1598855878405" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" timestamp="1598855878061" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/modules.xml" timestamp="1598855127134" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_16_RELEASE.xml" timestamp="1598855878297" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" timestamp="1598855878254" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" timestamp="1598855878118" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_expression_5_1_17_RELEASE.xml" timestamp="1598855878434" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_beans_5_1_17_RELEASE.xml" timestamp="1598855878410" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_16_RELEASE.xml" timestamp="1598855878260" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" timestamp="1598856959119" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" timestamp="1598855878482" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" timestamp="1598855878249" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_17_RELEASE.xml" timestamp="1598855878466" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_context_5_1_17_RELEASE.xml" timestamp="1598855878416" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/workspace.xml" timestamp="1603878938712" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_37.xml" timestamp="1598855878192" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_16_RELEASE.xml" timestamp="1598855878265" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/compiler.xml" timestamp="1598855878026" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_17_RELEASE.xml" timestamp="1598855878445" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_10.xml" timestamp="1598855878096" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_core_5_1_17_RELEASE.xml" timestamp="1598855878428" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" timestamp="1598855878112" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_2.xml" timestamp="1598856959114" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_16_RELEASE.xml" timestamp="1598855878277" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/encodings.xml" timestamp="1598855878033" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_10.xml" timestamp="1598855878084" />
+    <file path="/Users/yudong/Documents/Java/demo/demo.iml" timestamp="1598856984276" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" timestamp="1598855878171" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_spring_web_5_1_17_RELEASE.xml" timestamp="1598855878461" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_5.xml" timestamp="1598855878078" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" timestamp="1598855878067" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/misc.xml" timestamp="1598855127127" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_37.xml" timestamp="1598855878179" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_16_RELEASE.xml" timestamp="1598855878282" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/jarRepositories.xml" timestamp="1598855878039" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" timestamp="1598855878056" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/MyBatisCodeHelperDatasource.xml" timestamp="1602483714364" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_16_RELEASE.xml" timestamp="1598855878302" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" timestamp="1598856523173" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_16_RELEASE.xml" timestamp="1598855878287" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" timestamp="1598855878164" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_37.xml" timestamp="1598855878186" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" timestamp="1598855878073" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_10.xml" timestamp="1598855878090" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" timestamp="1598855878050" />
+    <file path="/Users/yudong/Documents/Java/demo/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_20_Final.xml" timestamp="1598855878217" />
+  </project-files>
+</conversion>

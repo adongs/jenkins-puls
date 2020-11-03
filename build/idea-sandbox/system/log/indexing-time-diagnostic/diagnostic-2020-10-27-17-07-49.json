@@ -1,0 +1,3223 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 06:21:22 +0800",
+    "productCode" : "IC",
+    "generated" : "Tue, 27 Oct 2020 17:07:49 +0800",
+    "os" : "macOS 10.15.5",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "demo",
+    "numberOfFileProviders" : 42,
+    "totalNumberOfFiles" : 63754,
+    "times" : {
+      "indexingTime" : "2 m 46 s 626 ms",
+      "scanFilesTime" : "30 s 439 ms",
+      "pushPropertiesTime" : "1 s 977 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Tue, 27 Oct 2020 17:05:02 +0800",
+      "pushPropertiesEnd" : "Tue, 27 Oct 2020 17:05:04 +0800",
+      "scanFilesStart" : "Tue, 27 Oct 2020 17:05:04 +0800",
+      "scanFilesEnd" : "Tue, 27 Oct 2020 17:05:34 +0800",
+      "indexExtensionsStart" : "Tue, 27 Oct 2020 17:05:04 +0800",
+      "indexExtensionsEnd" : "Tue, 27 Oct 2020 17:05:04 +0800",
+      "indexingStart" : "Tue, 27 Oct 2020 17:05:02 +0800",
+      "indexingEnd" : "Tue, 27 Oct 2020 17:07:49 +0800"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "CLASS",
+      "partOfTotalIndexingTime" : "56.9%",
+      "partOfTotalContentLoadingTime" : "67.5%",
+      "totalNumberOfFiles" : 50367,
+      "totalFilesSize" : "164.78 MB",
+      "indexingSpeed" : "1.68 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 39744,
+        "totalFilesSize" : "129.33 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "61.6%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+        "numberOfFiles" : 627,
+        "totalFilesSize" : "2.04 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "8.7%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+        "numberOfFiles" : 961,
+        "totalFilesSize" : "2.63 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "5.2%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 1548,
+        "totalFilesSize" : "6.07 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "4.8%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-core:5.1.17.RELEASE'",
+        "numberOfFiles" : 888,
+        "totalFilesSize" : "2.64 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.7%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-databind:2.9.10.5'",
+        "numberOfFiles" : 624,
+        "totalFilesSize" : "3.54 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.3%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+        "numberOfFiles" : 911,
+        "totalFilesSize" : "3.05 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.2%"
+      }, {
+        "providerName" : "Library 'Maven: org.hibernate.validator:hibernate-validator:6.0.20.Final'",
+        "numberOfFiles" : 805,
+        "totalFilesSize" : "2.55 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-context:5.1.17.RELEASE'",
+        "numberOfFiles" : 824,
+        "totalFilesSize" : "2.19 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.6%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-webmvc:5.1.17.RELEASE'",
+        "numberOfFiles" : 447,
+        "totalFilesSize" : "1.71 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.1%"
+      } ]
+    }, {
+      "fileType" : "JAVA",
+      "partOfTotalIndexingTime" : "28.1%",
+      "partOfTotalContentLoadingTime" : "28.8%",
+      "totalNumberOfFiles" : 11288,
+      "totalFilesSize" : "112.26 MB",
+      "indexingSpeed" : "2.32 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 10249,
+        "totalFilesSize" : "107.48 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "78.9%"
+      }, {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "36.86 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "9.3%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 169,
+        "totalFilesSize" : "503.48 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.0%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-core:1.2.3'",
+        "numberOfFiles" : 326,
+        "totalFilesSize" : "950.71 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.8%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-api:2.11.2'",
+        "numberOfFiles" : 129,
+        "totalFilesSize" : "986.88 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.3%"
+      }, {
+        "providerName" : "Library 'Maven: com.squareup.okhttp3:okhttp:3.14.2'",
+        "numberOfFiles" : 104,
+        "totalFilesSize" : "956.26 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.2%"
+      }, {
+        "providerName" : "Library 'Maven: org.yaml:snakeyaml:1.23'",
+        "numberOfFiles" : 112,
+        "totalFilesSize" : "592.23 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: javax.validation:validation-api:2.0.1.Final'",
+        "numberOfFiles" : 97,
+        "totalFilesSize" : "234.66 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "20.51 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: com.squareup.okio:okio:1.17.2'",
+        "numberOfFiles" : 31,
+        "totalFilesSize" : "276.64 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalIndexingTime" : "4.3%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "417.01 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "53.89 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "27.9%"
+      }, {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : "1.06 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "27.5%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 49,
+        "totalFilesSize" : "1.22 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "24.7%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "14.35 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.5%"
+      }, {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "109.27 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.0%"
+      }, {
+        "providerName" : "Library 'Maven: org.yaml:snakeyaml:1.23'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "75.61 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-api:2.11.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "26.28 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.4%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-beans:5.1.17.RELEASE'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "57.37 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.4%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "7.15 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.3%"
+      }, {
+        "providerName" : "Library 'Maven: javax.validation:validation-api:2.0.1.Final'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "26.36 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.1%"
+      } ]
+    }, {
+      "fileType" : "Groovy",
+      "partOfTotalIndexingTime" : "4.3%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 16,
+      "totalFilesSize" : "52.31 kB",
+      "indexingSpeed" : "7.13 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "52.31 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalIndexingTime" : "2.8%",
+      "partOfTotalContentLoadingTime" : "1.9%",
+      "totalNumberOfFiles" : 1070,
+      "totalFilesSize" : "4.82 MB",
+      "indexingSpeed" : "987.74 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 944,
+        "totalFilesSize" : "4.26 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "70.4%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 60,
+        "totalFilesSize" : "272.5 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "12.7%"
+      }, {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "235 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "6.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "88.31 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "4.5%"
+      }, {
+        "providerName" : "Library 'Maven: org.hibernate.validator:hibernate-validator:6.0.20.Final'",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : "155.66 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.8%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-core:2.9.10'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "148 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.slf4j:slf4j-api:1.7.30'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "109 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37'",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "19.83 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.37'",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "11.01 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "4.23 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 10,
+      "totalFilesSize" : "534.13 kB",
+      "indexingSpeed" : "457.56 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "445.86 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "61.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "78.43 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "38.0%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "7.94 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.37'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "379 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.51 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "937 B",
+      "indexingSpeed" : "1.08 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "937 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 400,
+      "totalFilesSize" : "1.31 MB",
+      "indexingSpeed" : "1.73 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 324,
+        "totalFilesSize" : "851.56 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "56.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "3.35 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "19.8%"
+      }, {
+        "providerName" : "Library 'Maven: javax.annotation:javax.annotation-api:1.3.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "72.23 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "8.2%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "24.58 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "4.7%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "76.89 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-core:5.1.17.RELEASE'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "16.42 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.3%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "32.12 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-beans:5.1.17.RELEASE'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "24.03 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-webmvc:5.1.17.RELEASE'",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "32.16 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "11.82 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "CSS",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 18,
+      "totalFilesSize" : "449.85 kB",
+      "indexingSpeed" : "772.57 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "449.85 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "DTD",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 72,
+      "totalFilesSize" : "731.8 kB",
+      "indexingSpeed" : "1.4 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 62,
+        "totalFilesSize" : "601.85 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "82.2%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "102.92 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "14.7%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-beans:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "22.64 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.3%"
+      }, {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "4.39 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 36,
+      "totalFilesSize" : "41.45 kB",
+      "indexingSpeed" : "84.37 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-core:1.2.3'",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "5.54 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "55.1%"
+      }, {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "24.44 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "30.8%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "3.27 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "9.9%"
+      }, {
+        "providerName" : "Library 'Maven: javax.annotation:javax.annotation-api:1.3.2'",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "8.2 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "4.2%"
+      } ]
+    }, {
+      "fileType" : "kotlin_module",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "614 B",
+      "indexingSpeed" : "1.48 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "75 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "98.7%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-core:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "78 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-context:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "272 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "78 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-beans:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "111 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "RNG Compact",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 122,
+      "totalFilesSize" : "461.81 kB",
+      "indexingSpeed" : "1.56 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 122,
+        "totalFilesSize" : "461.81 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 10,
+      "totalFilesSize" : "21.82 kB",
+      "indexingSpeed" : "87.42 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "9.07 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "96.3%"
+      }, {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "11.27 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.4%"
+      }, {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.48 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "SQL",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 18,
+      "totalFilesSize" : "32.3 kB",
+      "indexingSpeed" : "166.15 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "32.3 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "Manifest",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 77,
+      "totalFilesSize" : "140.38 kB",
+      "indexingSpeed" : "890.68 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 28,
+        "totalFilesSize" : "56.51 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "55.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18.39 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "7.8%"
+      }, {
+        "providerName" : "Library 'Maven: org.jboss.logging:jboss-logging:3.3.3.Final'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.95 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.3%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-api:2.11.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "2.46 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.6%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "237 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.5%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "7.33 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.3%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-core:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "180 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.1%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-databind:2.9.10.5'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "10.98 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.0%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-core:1.2.3'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "6.81 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.9%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.10'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.97 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.8%"
+      } ]
+    }, {
+      "fileType" : "C++",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 19,
+      "totalFilesSize" : "201.42 kB",
+      "indexingSpeed" : "1.33 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "201.42 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "GitIgnore file",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "395 B",
+      "indexingSpeed" : "2.62 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "395 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 16,
+      "totalFilesSize" : "269.07 kB",
+      "indexingSpeed" : "2.2 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "269.07 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "XHTML",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "2.91 kB",
+      "indexingSpeed" : "53.09 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.91 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "10.71 kB",
+      "indexingSpeed" : "243.78 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'demo'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.61 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "96.2%"
+      }, {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.53 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.1%"
+      }, {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.57 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.8%"
+      } ]
+    }, {
+      "fileType" : "SPI",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 42,
+      "totalFilesSize" : "11.03 kB",
+      "indexingSpeed" : "409.39 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "JDK 1.8",
+        "numberOfFiles" : 24,
+        "totalFilesSize" : "4.69 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "62.1%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "2.55 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "14.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.37'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "832 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.8%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-api:2.11.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.79 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.6%"
+      }, {
+        "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "76 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.9%"
+      }, {
+        "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "130 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.8%"
+      }, {
+        "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "57 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.0%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.10'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "628 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "2.0%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.10'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "61 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "1.6%"
+      }, {
+        "providerName" : "Library 'Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.10'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "47 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "ProGuard File",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "1.07 kB",
+      "indexingSpeed" : "127.72 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: com.squareup.okhttp3:okhttp:3.14.2'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.07 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "PATCH",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 8,
+      "totalFilesSize" : "4.45 kB",
+      "indexingSpeed" : "1.16 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "4.45 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "50.8%",
+      "totalNumberOfFiles" : 51653,
+      "totalFilesSize" : "172.8 MB",
+      "indexingSpeed" : "1.98 MB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "20.5%",
+      "totalNumberOfFiles" : 13374,
+      "totalFilesSize" : "124.43 MB",
+      "indexingSpeed" : "3.53 MB/s"
+    }, {
+      "indexId" : "bytecodeAnalysis",
+      "partOfTotalIndexingTime" : "11.2%",
+      "totalNumberOfFiles" : 50367,
+      "totalFilesSize" : "164.78 MB",
+      "indexingSpeed" : "8.58 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "10.4%",
+      "totalNumberOfFiles" : 13382,
+      "totalFilesSize" : "124.43 MB",
+      "indexingSpeed" : "6.92 MB/s"
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "2.0%",
+      "totalNumberOfFiles" : 24,
+      "totalFilesSize" : "108 kB",
+      "indexingSpeed" : "32.11 kB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+      "partOfTotalIndexingTime" : "1.3%",
+      "totalNumberOfFiles" : 50367,
+      "totalFilesSize" : "164.78 MB",
+      "indexingSpeed" : "72.56 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+      "partOfTotalIndexingTime" : "1.2%",
+      "totalNumberOfFiles" : 50367,
+      "totalFilesSize" : "164.78 MB",
+      "indexingSpeed" : "79.18 MB/s"
+    }, {
+      "indexId" : "XmlNamespaces",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 73,
+      "totalFilesSize" : "2.14 MB",
+      "indexingSpeed" : "1.41 MB/s"
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "4.25 MB/s"
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : "31.91 kB",
+      "indexingSpeed" : "69.78 kB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "614 B",
+      "indexingSpeed" : "1.5 kB/s"
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "7.95 MB/s"
+    }, {
+      "indexId" : "XmlTagNames",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 11,
+      "totalFilesSize" : "415.21 kB",
+      "indexingSpeed" : "1.38 MB/s"
+    }, {
+      "indexId" : "SchemaTypeInheritance",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 11,
+      "totalFilesSize" : "415.21 kB",
+      "indexingSpeed" : "1.54 MB/s"
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 10,
+      "totalFilesSize" : "534.13 kB",
+      "indexingSpeed" : "4.2 MB/s"
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "53.89 kB",
+      "indexingSpeed" : "636.27 kB/s"
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 74,
+      "totalFilesSize" : "801.16 kB",
+      "indexingSpeed" : "15.99 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 16,
+      "totalFilesSize" : "269.07 kB",
+      "indexingSpeed" : "7.36 MB/s"
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : "31.91 kB",
+      "indexingSpeed" : "1.06 MB/s"
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "53.89 kB",
+      "indexingSpeed" : "1.81 MB/s"
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 12,
+      "totalFilesSize" : "31.91 kB",
+      "indexingSpeed" : "1.24 MB/s"
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "123.6 MB/s"
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "53.89 kB",
+      "indexingSpeed" : "3.58 MB/s"
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "208.72 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "614 B",
+      "indexingSpeed" : "102.45 kB/s"
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "53.89 kB",
+      "indexingSpeed" : "29.47 MB/s"
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "2.22 GB/s"
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 151,
+      "totalFilesSize" : "3.07 MB",
+      "indexingSpeed" : "2.53 GB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "JDK 1.8",
+      "totalNumberOfFiles" : 51393,
+      "totalIndexingTime" : "1 m 28 s 325 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 39744,
+        "totalFilesSize" : "129.33 MB",
+        "partOfTotalIndexingTime" : "58.2%",
+        "partOfTotalContentLoadingTime" : "64.1%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 10249,
+        "totalFilesSize" : "107.48 MB",
+        "partOfTotalIndexingTime" : "36.9%",
+        "partOfTotalContentLoadingTime" : "33.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 944,
+        "totalFilesSize" : "4.26 MB",
+        "partOfTotalIndexingTime" : "3.3%",
+        "partOfTotalContentLoadingTime" : "2.0%"
+      }, {
+        "fileType" : "CSS",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "449.85 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 324,
+        "totalFilesSize" : "851.56 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "C++",
+        "numberOfFiles" : 19,
+        "totalFilesSize" : "201.42 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "24.44 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "109.27 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JavaScript",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "269.07 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 28,
+        "totalFilesSize" : "56.51 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 24,
+        "totalFilesSize" : "4.69 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Shell Script",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "11.27 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "DTD",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "4.39 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.53 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "44.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "26.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "13.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "12.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.3%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.1%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "XmlNamespaces", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 642,
+      "totalIndexingTime" : "6 s 400 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 627,
+        "totalFilesSize" : "2.04 MB",
+        "partOfTotalIndexingTime" : "88.5%",
+        "partOfTotalContentLoadingTime" : "99.5%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "78.43 kB",
+        "partOfTotalIndexingTime" : "4.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "kotlin_module",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "75 B",
+        "partOfTotalIndexingTime" : "4.3%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "3.35 kB",
+        "partOfTotalIndexingTime" : "1.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "7.15 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.45 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "209 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "73.0%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "13.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex",
+        "partOfTotalIndexingTime" : "4.2%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "3.5%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "3.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.5%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "json.file.root.values", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37'",
+      "totalNumberOfFiles" : 1669,
+      "totalIndexingTime" : "5 s 218 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 1548,
+        "totalFilesSize" : "6.07 MB",
+        "partOfTotalIndexingTime" : "64.8%",
+        "partOfTotalContentLoadingTime" : "80.0%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 49,
+        "totalFilesSize" : "1.22 MB",
+        "partOfTotalIndexingTime" : "25.1%",
+        "partOfTotalContentLoadingTime" : "14.5%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 60,
+        "totalFilesSize" : "272.5 kB",
+        "partOfTotalIndexingTime" : "8.6%",
+        "partOfTotalContentLoadingTime" : "4.8%"
+      }, {
+        "fileType" : "DTD",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "102.92 kB",
+        "partOfTotalIndexingTime" : "1.1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "18.39 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "32.12 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "7.94 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "54.8%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "12.1%"
+      }, {
+        "indexId" : "XmlNamespaces",
+        "partOfTotalIndexingTime" : "10.3%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "7.8%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "7.3%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "3.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "json.file.root.values", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: ch.qos.logback:logback-classic:1.2.3'",
+      "totalNumberOfFiles" : 399,
+      "totalIndexingTime" : "4 s 469 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Groovy",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : "52.31 kB",
+        "partOfTotalIndexingTime" : "74.8%",
+        "partOfTotalContentLoadingTime" : "1.7%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 169,
+        "totalFilesSize" : "503.48 kB",
+        "partOfTotalIndexingTime" : "15.0%",
+        "partOfTotalContentLoadingTime" : "41.4%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 175,
+        "totalFilesSize" : "506.22 kB",
+        "partOfTotalIndexingTime" : "7.2%",
+        "partOfTotalContentLoadingTime" : "46.3%"
+      }, {
+        "fileType" : "SQL",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "32.3 kB",
+        "partOfTotalIndexingTime" : "2.0%",
+        "partOfTotalContentLoadingTime" : "1.4%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "26.16 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "3.27 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "7.9%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "7.33 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "252 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "130 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "77.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "15.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "6.1%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "bytecodeAnalysis", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 966,
+      "totalIndexingTime" : "4 s 84 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 961,
+        "totalFilesSize" : "2.63 MB",
+        "partOfTotalIndexingTime" : "84.3%",
+        "partOfTotalContentLoadingTime" : "98.3%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "445.86 kB",
+        "partOfTotalIndexingTime" : "11.9%",
+        "partOfTotalContentLoadingTime" : "1.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "88.31 kB",
+        "partOfTotalIndexingTime" : "3.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "11.82 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "237 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "68.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "8.5%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "3.2%"
+      }, {
+        "indexId" : "json.file.root.values",
+        "partOfTotalIndexingTime" : "2.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Module 'demo'",
+      "totalNumberOfFiles" : 24,
+      "totalIndexingTime" : "3 s 360 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 13,
+        "totalFilesSize" : "36.86 kB",
+        "partOfTotalIndexingTime" : "55.2%",
+        "partOfTotalContentLoadingTime" : "54.9%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "53.89 kB",
+        "partOfTotalIndexingTime" : "25.2%",
+        "partOfTotalContentLoadingTime" : "38.9%"
+      }, {
+        "fileType" : "Markdown",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "937 B",
+        "partOfTotalIndexingTime" : "10.6%",
+        "partOfTotalContentLoadingTime" : "1.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "235 B",
+        "partOfTotalIndexingTime" : "3.7%",
+        "partOfTotalContentLoadingTime" : "3.3%"
+      }, {
+        "fileType" : "Shell Script",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "9.07 kB",
+        "partOfTotalIndexingTime" : "3.0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "GitIgnore file",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "395 B",
+        "partOfTotalIndexingTime" : "1.8%",
+        "partOfTotalContentLoadingTime" : "1.4%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.61 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "41.3%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "40.5%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "5.7%"
+      }, {
+        "indexId" : "java.null.method.argument",
+        "partOfTotalIndexingTime" : "5.6%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "3.0%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "1.3%"
+      }, {
+        "indexId" : "FrameworkDetectionIndex",
+        "partOfTotalIndexingTime" : "1.0%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "RelaxSymbolIndex", "XsltSymbolIndex", "ant-imports", "devkit.ExtensionPointIndex", "fileIncludes", "java.binary.plus.expression", "java.fun.expression", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-core:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 893,
+      "totalIndexingTime" : "2 s 849 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 888,
+        "totalFilesSize" : "2.64 MB",
+        "partOfTotalIndexingTime" : "99.4%",
+        "partOfTotalContentLoadingTime" : "99.6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "16.42 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "kotlin_module",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "78 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "180 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "75.7%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "4.6%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "4.3%"
+      } ],
+      "fastIndexers" : [ "IdIndex", "Trigram.Index", "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: ch.qos.logback:logback-core:1.2.3'",
+      "totalNumberOfFiles" : 723,
+      "totalIndexingTime" : "1 s 922 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 326,
+        "totalFilesSize" : "950.71 kB",
+        "partOfTotalIndexingTime" : "50.6%",
+        "partOfTotalContentLoadingTime" : "54.3%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 373,
+        "totalFilesSize" : "854.33 kB",
+        "partOfTotalIndexingTime" : "36.4%",
+        "partOfTotalContentLoadingTime" : "44.0%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 18,
+        "totalFilesSize" : "5.54 kB",
+        "partOfTotalIndexingTime" : "10.2%",
+        "partOfTotalContentLoadingTime" : "1.6%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "8.39 kB",
+        "partOfTotalIndexingTime" : "2.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "6.81 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "246 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "37.9%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "35.4%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "16.8%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "6.7%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "2.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-api:2.11.2'",
+      "totalNumberOfFiles" : 311,
+      "totalIndexingTime" : "1 s 917 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 129,
+        "totalFilesSize" : "986.88 kB",
+        "partOfTotalIndexingTime" : "57.2%",
+        "partOfTotalContentLoadingTime" : "83.5%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 166,
+        "totalFilesSize" : "600.21 kB",
+        "partOfTotalIndexingTime" : "36.5%",
+        "partOfTotalContentLoadingTime" : "14.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "26.28 kB",
+        "partOfTotalIndexingTime" : "5.5%",
+        "partOfTotalContentLoadingTime" : "1.5%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "3.48 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "2.46 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "23.59 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.79 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "38.7%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "34.7%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "19.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "3.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.1%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-databind:2.9.10.5'",
+      "totalNumberOfFiles" : 630,
+      "totalIndexingTime" : "1 s 710 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 624,
+        "totalFilesSize" : "3.54 MB",
+        "partOfTotalIndexingTime" : "99.3%",
+        "partOfTotalContentLoadingTime" : "99.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.46 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "10.98 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.15 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "154 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "44 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "69.5%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "17.5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "7.5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "5.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.hibernate.validator:hibernate-validator:6.0.20.Final'",
+      "totalNumberOfFiles" : 835,
+      "totalIndexingTime" : "1 s 644 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 805,
+        "totalFilesSize" : "2.55 MB",
+        "partOfTotalIndexingTime" : "88.9%",
+        "partOfTotalContentLoadingTime" : "91.2%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : "155.66 kB",
+        "partOfTotalIndexingTime" : "7.9%",
+        "partOfTotalContentLoadingTime" : "5.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 7,
+        "totalFilesSize" : "54.77 kB",
+        "partOfTotalIndexingTime" : "3.2%",
+        "partOfTotalContentLoadingTime" : "2.9%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "5.15 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "42 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "69.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "19.2%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "5.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "XmlNamespaces", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-web:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 921,
+      "totalIndexingTime" : "1 s 442 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 911,
+        "totalFilesSize" : "3.05 MB",
+        "partOfTotalIndexingTime" : "98.4%",
+        "partOfTotalContentLoadingTime" : "99.4%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "76.89 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "4.23 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "369 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "178 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "kotlin_module",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "78 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "57 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "78.8%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "3.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.3%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@575f5e10",
+      "totalNumberOfFiles" : 219,
+      "totalIndexingTime" : "1 s 386 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 21,
+        "totalFilesSize" : "1.06 MB",
+        "partOfTotalIndexingTime" : "72.0%",
+        "partOfTotalContentLoadingTime" : "37.6%"
+      }, {
+        "fileType" : "DTD",
+        "numberOfFiles" : 62,
+        "totalFilesSize" : "601.85 kB",
+        "partOfTotalIndexingTime" : "15.3%",
+        "partOfTotalContentLoadingTime" : "30.9%"
+      }, {
+        "fileType" : "RNG Compact",
+        "numberOfFiles" : 122,
+        "totalFilesSize" : "461.81 kB",
+        "partOfTotalIndexingTime" : "10.5%",
+        "partOfTotalContentLoadingTime" : "29.0%"
+      }, {
+        "fileType" : "XHTML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.91 kB",
+        "partOfTotalIndexingTime" : "2.0%",
+        "partOfTotalContentLoadingTime" : "1.1%"
+      }, {
+        "fileType" : "PATCH",
+        "numberOfFiles" : 8,
+        "totalFilesSize" : "4.45 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "9.99 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Shell Script",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.48 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.57 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "39.0%"
+      }, {
+        "indexId" : "XmlNamespaces",
+        "partOfTotalIndexingTime" : "23.3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "11.7%"
+      }, {
+        "indexId" : "XmlTagNames",
+        "partOfTotalIndexingTime" : "10.7%"
+      }, {
+        "indexId" : "SchemaTypeInheritance",
+        "partOfTotalIndexingTime" : "9.6%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "3.6%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-context:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 837,
+      "totalIndexingTime" : "1 s 343 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 824,
+        "totalFilesSize" : "2.19 MB",
+        "partOfTotalIndexingTime" : "96.8%",
+        "partOfTotalContentLoadingTime" : "98.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "69.42 kB",
+        "partOfTotalIndexingTime" : "2.9%",
+        "partOfTotalContentLoadingTime" : "1.6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "28.06 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "kotlin_module",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "272 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "186 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "75.0%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "17.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "2.1%"
+      }, {
+        "indexId" : "XmlNamespaces",
+        "partOfTotalIndexingTime" : "1.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.yaml:snakeyaml:1.23'",
+      "totalNumberOfFiles" : 329,
+      "totalIndexingTime" : "1 s 325 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 211,
+        "totalFilesSize" : "561.63 kB",
+        "partOfTotalIndexingTime" : "43.5%",
+        "partOfTotalContentLoadingTime" : "58.8%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 112,
+        "totalFilesSize" : "592.23 kB",
+        "partOfTotalIndexingTime" : "41.4%",
+        "partOfTotalContentLoadingTime" : "39.5%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "75.61 kB",
+        "partOfTotalIndexingTime" : "14.7%",
+        "partOfTotalContentLoadingTime" : "1.3%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "208 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.98 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "42.3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "21.7%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "20.9%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "9.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.7%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-webmvc:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 458,
+      "totalIndexingTime" : "905 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 447,
+        "totalFilesSize" : "1.71 MB",
+        "partOfTotalIndexingTime" : "92.4%",
+        "partOfTotalContentLoadingTime" : "98.0%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "153.9 kB",
+        "partOfTotalIndexingTime" : "6.9%",
+        "partOfTotalContentLoadingTime" : "1.2%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "32.16 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.56 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "184 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "73.0%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "3.7%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "2.3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "2.2%"
+      }, {
+        "indexId" : "XmlNamespaces",
+        "partOfTotalIndexingTime" : "2.2%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-beans:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 394,
+      "totalIndexingTime" : "728 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 382,
+        "totalFilesSize" : "1.39 MB",
+        "partOfTotalIndexingTime" : "87.9%",
+        "partOfTotalContentLoadingTime" : "97.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "57.37 kB",
+        "partOfTotalIndexingTime" : "10.3%",
+        "partOfTotalContentLoadingTime" : "1.3%"
+      }, {
+        "fileType" : "DTD",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "22.64 kB",
+        "partOfTotalIndexingTime" : "1.2%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "24.03 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "kotlin_module",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "111 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "182 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "68.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "5.5%"
+      }, {
+        "indexId" : "XmlNamespaces",
+        "partOfTotalIndexingTime" : "4.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "3.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: com.squareup.okhttp3:okhttp:3.14.2'",
+      "totalNumberOfFiles" : 309,
+      "totalIndexingTime" : "661 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 104,
+        "totalFilesSize" : "956.26 kB",
+        "partOfTotalIndexingTime" : "51.7%",
+        "partOfTotalContentLoadingTime" : "41.8%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 197,
+        "totalFilesSize" : "737.33 kB",
+        "partOfTotalIndexingTime" : "47.0%",
+        "partOfTotalContentLoadingTime" : "57.2%"
+      }, {
+        "fileType" : "ProGuard File",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.07 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.46 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "93 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "257 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "436 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "38.1%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "36.8%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "15.8%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "8.1%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: javax.validation:validation-api:2.0.1.Final'",
+      "totalNumberOfFiles" : 252,
+      "totalIndexingTime" : "458 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 97,
+        "totalFilesSize" : "234.66 kB",
+        "partOfTotalIndexingTime" : "48.0%",
+        "partOfTotalContentLoadingTime" : "38.6%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 143,
+        "totalFilesSize" : "129.11 kB",
+        "partOfTotalIndexingTime" : "37.2%",
+        "partOfTotalContentLoadingTime" : "45.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "26.36 kB",
+        "partOfTotalIndexingTime" : "14.3%",
+        "partOfTotalContentLoadingTime" : "1.4%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "204 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "14.3%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.72 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "308 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "36.4%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "25.2%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "13.6%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "11.5%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "8.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "3.5%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-core:2.9.10'",
+      "totalNumberOfFiles" : 113,
+      "totalIndexingTime" : "410 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 107,
+        "totalFilesSize" : "660.2 kB",
+        "partOfTotalIndexingTime" : "90.6%",
+        "partOfTotalContentLoadingTime" : "98.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "148 B",
+        "partOfTotalIndexingTime" : "5.7%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4.06 kB",
+        "partOfTotalIndexingTime" : "2.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.15 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.58 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "39 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "78.8%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "14.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "2.3%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "1.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-aop:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 284,
+      "totalIndexingTime" : "402 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 277,
+        "totalFilesSize" : "697.97 kB",
+        "partOfTotalIndexingTime" : "91.5%",
+        "partOfTotalContentLoadingTime" : "98.5%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "14.03 kB",
+        "partOfTotalIndexingTime" : "8.1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "18.43 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.0%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "178 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "66.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "21.6%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "7.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "XmlNamespaces", "ant-imports", "devkit.ExtensionPointIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37'",
+      "totalNumberOfFiles" : 190,
+      "totalIndexingTime" : "335 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 177,
+        "totalFilesSize" : "484.18 kB",
+        "partOfTotalIndexingTime" : "91.9%",
+        "partOfTotalContentLoadingTime" : "92.1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "19.83 kB",
+        "partOfTotalIndexingTime" : "3.0%",
+        "partOfTotalContentLoadingTime" : "5.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.22 kB",
+        "partOfTotalIndexingTime" : "3.0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "2.55 kB",
+        "partOfTotalIndexingTime" : "1.1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.51 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.3%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.84 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "11.73 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "65.6%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "19.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "9.1%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "3.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.5%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "json.file.root.values", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-jcl:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 21,
+      "totalIndexingTime" : "295 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 17,
+        "totalFilesSize" : "33.12 kB",
+        "partOfTotalIndexingTime" : "97.9%",
+        "partOfTotalContentLoadingTime" : "85.9%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "15.91 kB",
+        "partOfTotalIndexingTime" : "1.6%",
+        "partOfTotalContentLoadingTime" : "11.6%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "178 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "44 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.5%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "54.7%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "22.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "11.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "8.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "1.6%"
+      } ],
+      "fastIndexers" : [ "Trigram.Index" ]
+    }, {
+      "providerName" : "Library 'Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2'",
+      "totalNumberOfFiles" : 26,
+      "totalIndexingTime" : "294 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "20.51 kB",
+        "partOfTotalIndexingTime" : "46.3%",
+        "partOfTotalContentLoadingTime" : "29.7%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "14.35 kB",
+        "partOfTotalIndexingTime" : "41.8%",
+        "partOfTotalContentLoadingTime" : "40.8%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "24.58 kB",
+        "partOfTotalIndexingTime" : "8.3%",
+        "partOfTotalContentLoadingTime" : "2.5%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 6,
+        "totalFilesSize" : "19.49 kB",
+        "partOfTotalIndexingTime" : "2.2%",
+        "partOfTotalContentLoadingTime" : "24.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "210 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.2%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.85 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "76 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "51.8%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "25.3%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "16.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "4.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "bytecodeAnalysis", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: commons-io:commons-io:2.4'",
+      "totalNumberOfFiles" : 115,
+      "totalIndexingTime" : "284 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 110,
+        "totalFilesSize" : "343.31 kB",
+        "partOfTotalIndexingTime" : "86.7%",
+        "partOfTotalContentLoadingTime" : "98.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "10.17 kB",
+        "partOfTotalIndexingTime" : "11.7%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "11.74 kB",
+        "partOfTotalIndexingTime" : "1.0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.67 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "108 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "69.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "24.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.2%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.3%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.37'",
+      "totalNumberOfFiles" : 179,
+      "totalIndexingTime" : "275 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 168,
+        "totalFilesSize" : "474.42 kB",
+        "partOfTotalIndexingTime" : "95.3%",
+        "partOfTotalContentLoadingTime" : "92.6%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "11.01 kB",
+        "partOfTotalIndexingTime" : "2.3%",
+        "partOfTotalContentLoadingTime" : "5.8%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "11.73 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.27 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "379 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.47 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "832 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "73.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "20.2%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "2.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "ant-imports", "devkit.ExtensionPointIndex", "json.file.root.values", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework:spring-expression:5.1.17.RELEASE'",
+      "totalNumberOfFiles" : 154,
+      "totalIndexingTime" : "259 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 150,
+        "totalFilesSize" : "580.32 kB",
+        "partOfTotalIndexingTime" : "99.1%",
+        "partOfTotalContentLoadingTime" : "98.6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "22.05 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "1.2%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "192 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "68.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "27.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.5%"
+      } ],
+      "fastIndexers" : [ "IdIndex", "Trigram.Index" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml:classmate:1.4.0'",
+      "totalNumberOfFiles" : 85,
+      "totalIndexingTime" : "234 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 39,
+        "totalFilesSize" : "135.39 kB",
+        "partOfTotalIndexingTime" : "60.1%",
+        "partOfTotalContentLoadingTime" : "28.2%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 38,
+        "totalFilesSize" : "166.27 kB",
+        "partOfTotalIndexingTime" : "31.3%",
+        "partOfTotalContentLoadingTime" : "70.6%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "5.88 kB",
+        "partOfTotalIndexingTime" : "7.3%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.76 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "910 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "131 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "61.0%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "18.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "14.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "4.0%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.squareup.okio:okio:1.17.2'",
+      "totalNumberOfFiles" : 81,
+      "totalIndexingTime" : "203 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 31,
+        "totalFilesSize" : "276.64 kB",
+        "partOfTotalIndexingTime" : "57.4%",
+        "partOfTotalContentLoadingTime" : "60.0%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 46,
+        "totalFilesSize" : "166.7 kB",
+        "partOfTotalIndexingTime" : "41.1%",
+        "partOfTotalContentLoadingTime" : "35.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.98 kB",
+        "partOfTotalIndexingTime" : "1.1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "107 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "289 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "3.5%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "36.2%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "35.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "22.1%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "5.1%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.10'",
+      "totalNumberOfFiles" : 59,
+      "totalIndexingTime" : "167 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 54,
+        "totalFilesSize" : "227.56 kB",
+        "partOfTotalIndexingTime" : "92.2%",
+        "partOfTotalContentLoadingTime" : "97.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4.27 kB",
+        "partOfTotalIndexingTime" : "5.1%",
+        "partOfTotalContentLoadingTime" : "1.6%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "3.27 kB",
+        "partOfTotalIndexingTime" : "1.2%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "163 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "628 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "332 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "66.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "18.6%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "7.6%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "2.3%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.jboss.logging:jboss-logging:3.3.3.Final'",
+      "totalNumberOfFiles" : 51,
+      "totalIndexingTime" : "165 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 46,
+        "totalFilesSize" : "149.01 kB",
+        "partOfTotalIndexingTime" : "91.4%",
+        "partOfTotalContentLoadingTime" : "97.7%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.35 kB",
+        "partOfTotalIndexingTime" : "4.5%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.95 kB",
+        "partOfTotalIndexingTime" : "2.2%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "11.55 kB",
+        "partOfTotalIndexingTime" : "1.5%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "121 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "82.4%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "9.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "3.3%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.7%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: javax.annotation:javax.annotation-api:1.3.2'",
+      "totalNumberOfFiles" : 40,
+      "totalIndexingTime" : "160 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "28.96 kB",
+        "partOfTotalIndexingTime" : "27.9%",
+        "partOfTotalContentLoadingTime" : "10.2%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 14,
+        "totalFilesSize" : "53.83 kB",
+        "partOfTotalIndexingTime" : "23.5%",
+        "partOfTotalContentLoadingTime" : "39.6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "72.23 kB",
+        "partOfTotalIndexingTime" : "21.5%",
+        "partOfTotalContentLoadingTime" : "15.7%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 15,
+        "totalFilesSize" : "9.06 kB",
+        "partOfTotalIndexingTime" : "19.2%",
+        "partOfTotalContentLoadingTime" : "12.5%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "8.2 kB",
+        "partOfTotalIndexingTime" : "7.2%",
+        "partOfTotalContentLoadingTime" : "21.0%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "1.23 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "121 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "33.2%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "25.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "25.0%"
+      }, {
+        "indexId" : "xmlProperties",
+        "partOfTotalIndexingTime" : "10.5%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "2.7%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.6%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "1.0%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.10'",
+      "totalNumberOfFiles" : 72,
+      "totalIndexingTime" : "142 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 68,
+        "totalFilesSize" : "113.4 kB",
+        "partOfTotalIndexingTime" : "81.8%",
+        "partOfTotalContentLoadingTime" : "96.1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.59 kB",
+        "partOfTotalIndexingTime" : "14.7%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "155 B",
+        "partOfTotalIndexingTime" : "2.7%",
+        "partOfTotalContentLoadingTime" : "2.3%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.13 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "317 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "66.2%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "21.1%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "3.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "2.5%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "2.2%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "1.7%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.5%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.2%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.slf4j:slf4j-api:1.7.30'",
+      "totalNumberOfFiles" : 37,
+      "totalIndexingTime" : "123 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 34,
+        "totalFilesSize" : "82.2 kB",
+        "partOfTotalIndexingTime" : "84.9%",
+        "partOfTotalContentLoadingTime" : "76.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "3.83 kB",
+        "partOfTotalIndexingTime" : "7.8%",
+        "partOfTotalContentLoadingTime" : "2.4%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "109 B",
+        "partOfTotalIndexingTime" : "6.4%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "679 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "20.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "82.1%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "7.3%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "4.3%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "3.9%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.2%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "Trigram.Index", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.10'",
+      "totalNumberOfFiles" : 26,
+      "totalIndexingTime" : "67 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 22,
+        "totalFilesSize" : "66.57 kB",
+        "partOfTotalIndexingTime" : "79.0%",
+        "partOfTotalContentLoadingTime" : "96.9%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.92 kB",
+        "partOfTotalIndexingTime" : "9.7%",
+        "partOfTotalContentLoadingTime" : "1.0%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "161 B",
+        "partOfTotalIndexingTime" : "7.6%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "2.43 kB",
+        "partOfTotalIndexingTime" : "3.2%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "47 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "64.0%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "22.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "5.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "2.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "1.8%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "1.3%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "1.2%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "1.1%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.10'",
+      "totalNumberOfFiles" : 8,
+      "totalIndexingTime" : "25 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "3.73 kB",
+        "partOfTotalIndexingTime" : "42.0%",
+        "partOfTotalContentLoadingTime" : "17.4%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "8.44 kB",
+        "partOfTotalIndexingTime" : "38.4%",
+        "partOfTotalContentLoadingTime" : "63.4%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "168 B",
+        "partOfTotalIndexingTime" : "9.4%",
+        "partOfTotalContentLoadingTime" : "4.5%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.97 kB",
+        "partOfTotalIndexingTime" : "8.9%",
+        "partOfTotalContentLoadingTime" : "3.9%"
+      }, {
+        "fileType" : "SPI",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "61 B",
+        "partOfTotalIndexingTime" : "1.3%",
+        "partOfTotalContentLoadingTime" : "10.9%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "41.6%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "28.0%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "10.3%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "7.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "6.8%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "3.9%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.slf4j:jul-to-slf4j:1.7.30'",
+      "totalNumberOfFiles" : 4,
+      "totalIndexingTime" : "21 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "990 B",
+        "partOfTotalIndexingTime" : "41.7%",
+        "partOfTotalContentLoadingTime" : "18.7%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "112 B",
+        "partOfTotalIndexingTime" : "40.1%",
+        "partOfTotalContentLoadingTime" : "23.5%"
+      }, {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4.93 kB",
+        "partOfTotalIndexingTime" : "14.7%",
+        "partOfTotalContentLoadingTime" : "44.8%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "592 B",
+        "partOfTotalIndexingTime" : "3.4%",
+        "partOfTotalContentLoadingTime" : "13.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "74.9%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "8.9%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "5.3%"
+      }, {
+        "indexId" : "DomFileIndex",
+        "partOfTotalIndexingTime" : "4.7%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "3.2%"
+      }, {
+        "indexId" : "ant-imports",
+        "partOfTotalIndexingTime" : "2.2%"
+      } ],
+      "fastIndexers" : [ "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "devkit.ExtensionPointIndex", "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-starter-logging:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "241 B",
+        "partOfTotalIndexingTime" : "100.0%",
+        "partOfTotalContentLoadingTime" : "100.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "69.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "30.1%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-starter-web:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "3 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "233 B",
+        "partOfTotalIndexingTime" : "100.0%",
+        "partOfTotalContentLoadingTime" : "100.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "76.4%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "23.6%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-starter:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "2 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "225 B",
+        "partOfTotalIndexingTime" : "100.0%",
+        "partOfTotalContentLoadingTime" : "100.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "67.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "32.9%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-starter-tomcat:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "1 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "239 B",
+        "partOfTotalIndexingTime" : "100.0%",
+        "partOfTotalContentLoadingTime" : "100.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "81.8%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "18.2%"
+      } ],
+      "fastIndexers" : [ ]
+    }, {
+      "providerName" : "Library 'Maven: org.springframework.boot:spring-boot-starter-json:2.1.16.RELEASE'",
+      "totalNumberOfFiles" : 1,
+      "totalIndexingTime" : "1 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "235 B",
+        "partOfTotalIndexingTime" : "100.0%",
+        "partOfTotalContentLoadingTime" : "100.0%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "68.9%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "31.1%"
+      } ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}
