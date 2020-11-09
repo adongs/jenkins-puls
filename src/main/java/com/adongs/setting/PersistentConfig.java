@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
  */
 @State(name = "JenkinsPulsPersistentConfig", storages = {@Storage(value = "jenkins-puls.xml", roamingType = RoamingType.DISABLED)})
 public class PersistentConfig implements PersistentStateComponent<PersistentConfig>,TokenSave {
-    private final static String SUBSYSTEM = "idea-jenkins-puls";
+    public final static String SUBSYSTEM = "idea-jenkins-puls";
     private final static String KEY_PASSWORD = "password";
     private final static String KEY_TOKEN = "token";
     private long expireDate = 0;
@@ -107,5 +107,13 @@ public class PersistentConfig implements PersistentStateComponent<PersistentConf
         Credentials credentials = new Credentials(KEY_TOKEN,"");
         PasswordSafe.getInstance().set(attributes, credentials);
         expireDate = 0;
+    }
+
+    public AccountConfig getAccountConfig() {
+        return accountConfig;
+    }
+
+    public void setAccountConfig(AccountConfig accountConfig) {
+        this.accountConfig = accountConfig;
     }
 }

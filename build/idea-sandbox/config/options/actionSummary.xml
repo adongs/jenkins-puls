@@ -4,26 +4,32 @@
       <entry key="$SelectAll">
         <ActionSummary times="3" last="1603878923556" />
       </entry>
+      <entry key="ActivateJenkinstaskToolWindow">
+        <ActionSummary times="1" last="1604475124289" />
+      </entry>
       <entry key="EditorBackSpace">
-        <ActionSummary times="51" last="1603880276599" />
+        <ActionSummary times="54" last="1604397555920" />
       </entry>
       <entry key="EditorCopy">
         <ActionSummary times="1" last="1603849163599" />
       </entry>
       <entry key="EditorPaste">
-        <ActionSummary times="27" last="1603880271748" />
+        <ActionSummary times="28" last="1604397549446" />
       </entry>
       <entry key="WelcomeScreen.OpenProject">
         <ActionSummary times="1" last="1603790430987" />
       </entry>
       <entry key="com.intellij.ide.ReopenProjectAction">
-        <ActionSummary times="13" last="1603871722201" />
+        <ActionSummary times="14" last="1604397932159" />
       </entry>
       <entry key="com.intellij.notification.EventLogConsole$ClearLogAction">
         <ActionSummary times="3" last="1603871809545" />
       </entry>
       <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
-        <ActionSummary times="8" last="1603871810385" />
+        <ActionSummary times="10" last="1604480953788" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$ShowOptionsAction">
+        <ActionSummary times="2" last="1604480185208" />
       </entry>
     </data>
   </component>

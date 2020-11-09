@@ -1,6 +1,7 @@
 package com.adongs.windows;
 
 import com.adongs.JenkinsClient;
+import com.adongs.action.RefreshAction;
 import com.adongs.config.AccountConfig;
 import com.adongs.http.HttpReques;
 import com.adongs.manager.JenkinsClientManager;
@@ -10,21 +11,48 @@ import com.adongs.setting.PersistentConfig;
 import com.adongs.windows.components.construct.ConstructList;
 import com.adongs.windows.components.task.TaskList;
 import com.adongs.windows.components.waiting.WaitingList;
-import com.intellij.openapi.actionSystem.ActionManager;
-import com.intellij.openapi.actionSystem.ActionToolbar;
-import com.intellij.openapi.actionSystem.DefaultActionGroup;
+import com.adongs.windows.notification.NotificationManager;
+import com.intellij.execution.filters.TextConsoleBuilder;
+import com.intellij.execution.filters.TextConsoleBuilderFactory;
+import com.intellij.execution.ui.ConsoleView;
+import com.intellij.execution.ui.ConsoleViewContentType;
+import com.intellij.ide.dnd.DnDDropHandler;
+import com.intellij.ide.dnd.DnDEvent;
+import com.intellij.ide.dnd.DnDSupport;
+import com.intellij.notification.NotificationDisplayType;
+import com.intellij.notification.NotificationGroup;
+import com.intellij.notification.NotificationType;
+import com.intellij.openapi.actionSystem.*;
 import com.intellij.openapi.project.DumbAware;
+import com.intellij.openapi.project.DumbAwareAction;
+import com.intellij.openapi.project.DumbAwareToggleAction;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.startup.StartupManager;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
+import com.intellij.openapi.wm.ToolWindowManager;
+import com.intellij.openapi.wm.ex.ToolWindowEx;
+import com.intellij.openapi.wm.ex.ToolWindowManagerEx;
+import com.intellij.openapi.wm.ex.ToolWindowManagerListener;
+import com.intellij.openapi.wm.impl.ToolWindowHeadlessManagerImpl;
 import com.intellij.ui.components.JBList;
-import com.intellij.ui.content.Content;
-import com.intellij.ui.content.ContentFactory;
+import com.intellij.ui.content.*;
+import com.intellij.ui.treeStructure.treetable.TreeTable;
+import com.jediterm.terminal.ui.JediTermWidget;
+import icons.Icons;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
+import java.awt.event.InputEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author yudong
@@ -46,8 +74,9 @@ public class TaskWindow implements ToolWindowFactory, DumbAware {
     private ConstructList constructList;
 
     public TaskWindow() {
-        init();
         WindowManager.registered(this);
+        init();
+
     }
 
     public void init(){
@@ -79,8 +108,56 @@ public class TaskWindow implements ToolWindowFactory, DumbAware {
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
         TaskWindow taskList = new TaskWindow();
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
-        Content content = contentFactory.createContent(taskList.root(), "", false);
+        Content content = contentFactory.createContent(taskList.root(), "测试1", true);
+        Content content2 = contentFactory.createContent(taskList.root(), "测试2", true);
         toolWindow.getContentManager().addContent(content);
+        toolWindow.getContentManager().addContent(content2);
+        NotificationManager.notifyInfo(project,"测试");
+        NotificationManager.notifyError(project,"测试1");
+        NotificationManager.notifyWarning(project,"测试3");
+
+     /*   taskList.root().addAncestorListener(new AncestorListener() {
+            @Override
+            public void ancestorAdded(AncestorEvent event) {
+                System.out.println("1111");
+            }
+
+            @Override
+            public void ancestorRemoved(AncestorEvent event) {
+                System.out.println("2222");
+            }
+
+            @Override
+            public void ancestorMoved(AncestorEvent event) {
+                System.out.println("3333");
+            }
+        });*/
+
+
+              /*  new ToolWindowManagerListener(){
+                    @Override
+                    public void toolWindowsRegistered(@NotNull List<String> ids) {
+
+                    }
+
+                    @Override
+                    public void toolWindowUnregistered(@NotNull String id, @NotNull ToolWindow toolWindow) {
+
+                    }
+
+                    @Override
+                    public void stateChanged(@NotNull ToolWindowManager toolWindowManager) {
+
+                    }
+
+                    @Override
+                    public void toolWindowShown(@NotNull String id, @NotNull ToolWindow toolWindow) {
+
+                    }
+                };*/
+
+        //NOTIFICATION_GROUP.createNotification("测试啦啦啦", NotificationType.INFORMATION).notify(project);
+
     }
 
 

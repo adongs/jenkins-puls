@@ -16,7 +16,12 @@
     <applicationConfigurable id="jenkinspuls.id" displayName="Jenkins plug" instance="com.adongs.setting.SettingConfigurable"/>
     <applicationService serviceInterface="com.adongs.setting.PersistentConfig" serviceImplementation="com.adongs.setting.PersistentConfig"/>
     <toolWindow id="Jenkins task" icon="Icons.JENKINS" anchor="right" factoryClass="com.adongs.windows.TaskWindow"/>
+    <toolWindow id="Jenkins log" icon="Icons.JENKINS" anchor="right" factoryClass="com.adongs.windows.BuildLogWindow" canCloseContents="true"/>
+    <applicationService serviceInterface="com.adongs.windows.service.DataUpdateService" serviceImplementation="com.adongs.windows.service.impl.DataUpdateServiceImpl"/>
   </extensions>
+  <projectListeners>
+    <listener class="com.adongs.windows.listener.ToolWindowListener" topic="com.intellij.openapi.wm.ex.ToolWindowManagerListener"/>
+  </projectListeners>
   <actions>
     <action id="jenkins.refresh" class="com.adongs.action.RefreshAction" text="刷新" description="刷新" icon="Icons.REFRESH"/>
     <action id="jenkins.login" class="com.adongs.action.LoginAction" text="用户登录" description="用户登录" icon="Icons.LOGIN"/>

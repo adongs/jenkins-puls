@@ -3,6 +3,8 @@ package com.adongs.windows.components.construct;
 
 import com.adongs.model.BuildTask;
 import com.adongs.model.QueueJob;
+import com.adongs.windows.components.CircleProgressBar;
+import com.adongs.windows.components.ColourLabel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +24,7 @@ public class ListCellRendererConstruc implements ListCellRenderer {
     public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
         if (value instanceof QueueJob){
             QueueJob job = (QueueJob)value;
-            JPanel jPanel = new JPanel(new GridLayout(1,1,0,0));
+            JPanel jPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
             jPanel.setPreferredSize(new Dimension(-1,30));
             JProgressBar jProgressBar = new JProgressBar();
             jProgressBar.setValue(Integer.valueOf(job.getSchedule()));
@@ -32,7 +34,11 @@ public class ListCellRendererConstruc implements ListCellRenderer {
             jProgressBar.setStringPainted(true);
             jProgressBar.setString(job.getName()+"  "+job.getSchedule()+"%");
             jProgressBar.setBorderPainted(true);
-            jPanel.add(jProgressBar);
+            CircleProgressBar circleProgressBar = new CircleProgressBar(50);
+            circleProgressBar.setIndeterminate(true);
+            circleProgressBar.setMaximumSize(new Dimension(30,30));
+            jPanel.setPreferredSize(new Dimension(30,30));
+            jPanel.add(circleProgressBar);
             return jPanel;
         }
         return null;

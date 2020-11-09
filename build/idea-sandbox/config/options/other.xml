@@ -2,13 +2,14 @@
   <component name="PropertiesComponent">
     <property name="UITheme.relaunch" value="true" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="file.gist.reindex.count" value="12" />
     <property name="ide.memory.adjusted" value="true" />
     <property name="installed.kotlin.plugin.version" value="1.3.72-release-IJ2020.1-6" />
     <property name="lastSeenTip" value="neue-LineEndings.html" />
     <property name="lastTimeTipsWereShown" value="1603878186736" />
     <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
     <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
-    <property name="packagesearch.status.updated.ts" value="1603790443619" />
+    <property name="packagesearch.status.updated.ts" value="1604397269729" />
     <property name="seenTips" value="neue-CodeCompletionInSearch.html,neue-LineEndings.html" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>

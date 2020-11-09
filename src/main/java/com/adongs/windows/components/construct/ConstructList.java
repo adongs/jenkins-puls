@@ -74,6 +74,7 @@ public class ConstructList extends JBList implements UpdateData {
         if (jenkinsClient!=null){
             final BuildQueue buildQueue = jenkinsClient.getBuildQueue();
             final List<QueueJob> queueJobs = buildQueue.executors();
+            queueJobs.add(new QueueJob("","","",1,""));
             DefaultListModel defaultListModel = new DefaultListModel();
             queueJobs.forEach(defaultListModel::addElement);
             this.setModel(defaultListModel);

@@ -54,6 +54,7 @@
         "context_menu" : [ "{enum#boolean}" ],
         "current_file" : [ "{util#current_file}" ],
         "dumb" : [ "{enum#boolean}" ],
+        "enable" : [ "{enum#boolean}" ],
         "input_event" : [ "{util#shortcut}" ],
         "lang" : [ "{util#lang}" ],
         "parent" : [ "{enum#parent}", "{util#class_name}", "{enum:LineMarkerActionWrapper|TreeActionWrapper|MyTreeActionWrapper}" ],
@@ -281,6 +282,7 @@
         "context_menu" : [ "{enum#boolean}" ],
         "current_file" : [ "{util#current_file}" ],
         "dumb" : [ "{enum#boolean}" ],
+        "enable" : [ "{enum#boolean}" ],
         "executor" : [ "{util#run_config_executor}" ],
         "input_event" : [ "{util#shortcut}" ],
         "parent" : [ "{util#class_name}" ],
@@ -861,6 +863,21 @@
       }
     }
   }, {
+    "id" : "file.type.configurable.interactions",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "file_type" : [ "{util#file_type}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "file.type.added", "file.type.edited", "file.type.removed", "hashbang.added", "hashbang.edited", "hashbang.removed", "ignore.pattern.added", "ignore.pattern.edited", "ignore.pattern.removed", "pattern.added", "pattern.edited", "pattern.removed" ]
+      }
+    }
+  }, {
     "id" : "file.types",
     "builds" : [ ],
     "versions" : [ {
@@ -959,8 +976,22 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__event_id" : [ "repo.sync", "update.type", "save.policy", "use.builtin.ssh", "push.autoupdate", "push.update.all.roots", "cherrypick.autocommit", "warn.about.crlf", "warn.about.detached", "executable", "repository", "showGitBranchesInLog", "updateBranchesFilterInLogOnSelection" ],
+        "__event_id" : [ "repo.sync", "update.type", "save.policy", "use.builtin.ssh", "push.autoupdate", "push.update.all.roots", "cherrypick.autocommit", "warn.about.crlf", "warn.about.detached", "executable", "repository", "showGitBranchesInLog", "updateBranchesFilterInLogOnSelection", "staging.area.enabled" ],
         "__type" : [ "UNIX", "MSYS", "CYGWIN", "UNDEFINED", "NULL" ]
+      }
+    }
+  }, {
+    "id" : "got.it.tooltip",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:close|show}" ],
+      "event_data" : {
+        "count" : [ "{regexp#integer}" ],
+        "id_prefix" : [ "{util#got.it.tooltip}" ],
+        "type" : [ "{enum:click.button|click.link|click.outside|ancestor.removed|escape.shortcut.pressed|timeout}" ]
       }
     }
   }, {
@@ -1226,7 +1257,7 @@
       "event_id" : [ "{enum:highlight.level.changed}" ],
       "event_data" : {
         "lang" : [ "{util#lang}" ],
-        "level" : [ "{enum:Errors_Only|None|All_Problems}" ]
+        "level" : [ "{enum:Errors_Only|None|All_Problems}", "{enum:SYNTAX|NONE|ALL}" ]
       }
     }
   }, {
@@ -1643,19 +1674,20 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum#_}" ],
+      "event_id" : [ "{enum:Files|PSI_expression|Text_expression|Conversion}" ],
       "event_data" : {
         "Files_count" : [ "{regexp#integer}" ],
         "Is_new_J2K" : [ "{enum#boolean}" ],
         "Lines_count" : [ "{regexp#integer}" ],
         "Time" : [ "{regexp#integer}" ],
-        "plugin_version" : [ "{regexp#plugin_version}" ]
-      },
-      "enums" : {
-        "_" : [ "Files", "PSI_expression", "Text_expression" ]
-      },
-      "regexps" : {
-        "plugin_version" : "\\d\\.\\d\\.\\d{1,3}-(dev|eap|release)-(\\d+-)?(AppCode|CLion|IJ|Studio)[0-9\\-\\.]+"
+        "conversion_time" : [ "{regexp#integer}" ],
+        "files_count" : [ "{regexp#integer}" ],
+        "is_new_j2k" : [ "{enum#boolean}" ],
+        "lines_count" : [ "{regexp#integer}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{regexp#kotlin_version}", "{util#plugin_version}" ],
+        "source_type" : [ "{enum:Files|PSI_expression|Text_expression}" ]
       }
     }
   }, {
@@ -1665,18 +1697,16 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum#_}" ],
+      "event_id" : [ "{enum:Notification|Run}" ],
       "event_data" : {
         "old_api_version" : [ "{regexp#version_lang_api}" ],
         "old_language_version" : [ "{regexp#version_lang_api}" ],
         "old_stdlib_version" : [ "{regexp#version_stdlib}" ],
-        "plugin_version" : [ "{regexp#plugin_version}" ]
-      },
-      "enums" : {
-        "_" : [ "Notification", "Run" ]
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{regexp#kotlin_version}", "{util#plugin_version}" ]
       },
       "regexps" : {
-        "plugin_version" : "\\d\\.\\d\\.\\d{1,3}-(dev|eap|release)-(\\d+-)?(AppCode|CLion|IJ|Studio)[0-9\\-\\.]+",
         "version_lang_api" : "\\d\\.\\d",
         "version_stdlib" : "\\d\\.\\d\\.\\d{1,3}"
       }
@@ -1812,8 +1842,11 @@
       "event_id" : [ "{enum:Build}" ],
       "event_data" : {
         "languageVersion" : [ "{regexp#float}" ],
-        "platform" : [ "{enum:jvm|js|native|common}" ],
+        "platform" : [ "{enum:jvm|js|native|common}", "{enum:jvm|jvm.android|js|common|native.unknown|unknown|native.android_x64|native.android_x86|native.android_arm32|native.android_arm64|native.ios_arm32|native.ios_arm64|native.ios_x64|native.watchos_arm32|native.watchos_arm64|native.watchos_x86|native.watchos_x64|native.tvos_arm64|native.tvos_x64|native.linux_x64|native.mingw_x86|native.mingw_x64|native.macos_x64|native.linux_arm64|native.linux_arm32_hfp|native.linux_mips32|native.linux_mipsel32|native.wasm32}" ],
+        "plugin" : [ "{util#plugin}" ],
         "pluginVersion" : [ "{regexp#kotlin_version}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{regexp#kotlin_version}", "{util#plugin_version}" ],
         "system" : [ "{enum:JPS|Maven|Gradle|unknown}" ]
       }
     }
@@ -2017,14 +2050,15 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
-        "action_id" : [ "{util#class_name}" ],
+        "action_id" : [ "{util#class_name}", "{util#action}" ],
+        "additional.display_id" : [ "{enum#notification_id}", "{util#notification_display_id}" ],
         "class" : [ "{util#class_name}" ],
         "display_id" : [ "{util#notification_display_id}" ],
-        "display_type" : [ "{enum:BALLOON|STICKY_BALLOON|TOOL_WINDOW}" ],
+        "display_type" : [ "{enum:BALLOON|STICKY_BALLOON|TOOL_WINDOW}", "{enum:NONE}" ],
         "id" : [ "{regexp:\\d+.\\d+}" ],
         "is_expandable" : [ "{enum#boolean}" ],
         "notification_group" : [ "{util#notification_group}", "{enum:JavaScript_Debugger_Console_URL_Starter}" ],
-        "notification_place" : [ "{enum:BALLOON|EVENT_LOG}" ],
+        "notification_place" : [ "{enum:BALLOON|EVENT_LOG}", "{enum:TOOL_WINDOW}" ],
         "parent" : [ "{util#class_name}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -2032,7 +2066,8 @@
         "severity" : [ "{enum:ERROR|INFORMATION|WARNING}" ]
       },
       "enums" : {
-        "__event_id" : [ "action.invoked", "balloon.collapsed", "balloon.expanded", "closed.by.user", "event.log.balloon.shown", "hyperlink.clicked", "logged", "settings.clicked", "shown" ]
+        "__event_id" : [ "action.invoked", "balloon.collapsed", "balloon.expanded", "closed.by.user", "event.log.balloon.shown", "hyperlink.clicked", "logged", "settings.clicked", "shown" ],
+        "notification_id" : [ "ignored.to.exclude.synchronization.notification", "externally.added.files.notification", "project.configuration.files.added.notification", "manage.ignore.files.notification", "github.missing.default.account", "github.pull.request.cannot.set.tracking.branch", "github.clone.unable.to.create.destination.dir", "github.clone.unable.to.find.destination", "github.open.in.browser.file.is.not.under.repo", "github.open.in.browser.cannot.get.last.revision", "github.rebase.success", "github.gist.cannot.create", "github.pull.request.cannot.load.branches", "github.pull.request.cannot.collect.additional.data", "github.pull.request.cannot.load.forks", "github.pull.request.failed.to.add.remote", "github.pull.request.push.failed", "github.pull.request.creation.error", "github.pull.request.cannot.collect.diff.data", "github.pull.request.cannot.find.repo", "github.pull.request.created", "github.pull.request.cannot.process.remote", "github.pull.request.no.current.branch", "github.rebase.cannot.validate.upstream.remote", "github.rebase.upstream.is.own.repo", "github.rebase.cannot.get.user.info", "github.rebase.cannot.retrieve.upstream.info", "github.rebase.cannot.configure.upstream.remote", "github.rebase.repo.not.found", "github.rebase.cannot.load.repo.info", "github.rebase.repo.is.not.a.fork", "github.share.cannot.find.git.repo", "github.share.cannot.create.repo", "github.share.project.successfully.shared", "github.share.empty.repo.created", "github.share.project.created.init.commit.failed", "github.share.init.push.failed", "github.gist.created", "github.git.repo.init.error", "unknown" ]
       }
     }
   }, {
@@ -2534,6 +2569,22 @@
       }
     }
   }, {
+    "id" : "rename.inplace.popup",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:hide|openRenameDialog|settingsChanged|show}" ],
+      "event_data" : {
+        "changedOnHide" : [ "{enum#boolean}" ],
+        "input_event" : [ "{util#shortcut}" ],
+        "linkUsed" : [ "{enum#boolean}" ],
+        "search_in_comments_on_hide" : [ "{enum#boolean}" ],
+        "search_in_text_occurrences_on_hide" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "rename.refactoring",
     "builds" : [ ],
     "versions" : [ {
@@ -2573,7 +2624,8 @@
         "ide_activity_id" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
-        "plugin_version" : [ "{util#plugin_version}" ]
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "target" : [ "{util#run_target}" ]
       }
     }
   }, {
@@ -2597,6 +2649,7 @@
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "shared" : [ "{enum#boolean}" ],
+        "target" : [ "{util#run_target}" ],
         "temporary" : [ "{enum#boolean}" ]
       }
     }
@@ -2632,6 +2685,22 @@
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ]
+      }
+    }
+  }, {
+    "id" : "search.everywhere.filters",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:contributor.changed|file.type.changed|lang.changed|quick.filter.button}" ],
+      "event_data" : {
+        "buttonName" : [ "{enum:ALL|NONE|INVERT}" ],
+        "contributorID" : [ "{util#se_contributor}" ],
+        "enabled" : [ "{enum#boolean}" ],
+        "fileType" : [ "{util#file_type}" ],
+        "langID" : [ "{util#lang}" ]
       }
     }
   }, {
@@ -2937,6 +3006,7 @@
         "context_menu" : [ "{enum#boolean}" ],
         "current_file" : [ "{util#current_file}" ],
         "dumb" : [ "{enum#boolean}" ],
+        "enable" : [ "{enum#boolean}" ],
         "input_event" : [ "{util#shortcut}" ],
         "parent" : [ "{util#class_name}" ],
         "place" : [ "{util#place}" ],
@@ -3032,7 +3102,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum#_}", "{enum#__event_id}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "class" : [ "{util#class_name}" ],
         "count" : [ "{regexp#integer}" ],
@@ -3041,8 +3111,7 @@
         "with_selection" : [ "{enum#boolean}" ]
       },
       "enums" : {
-        "_" : [ "HectorPopupDisplayed", "LookupShowElementActions", "DaemonEditorPopupInvoked", "NavBarNavigate", "NavBarShowPopup", "LookupExecuteElementAction" ],
-        "__event_id" : [ "ProgressPaused", "ProgressResumed", "NavBarShowPopup", "NavBarNavigate", "BreadcrumbShowTooltip", "BreadcrumbNavigate", "DumbModeDialogWasNotNeeded", "DumbModeDialogRequested", "DumbModeDialogShown", "DumbModeDialogCancelled", "DumbModeDialogFinished", "DumbModeDialogProceededToActions", "IncrementalSearchActivated", "IncrementalSearchKeyTyped", "IncrementalSearchCancelled", "IncrementalSearchNextPrevItemSelected", "DumbModeBalloonWasNotNeeded", "DumbModeBalloonRequested", "DumbModeBalloonShown", "DumbModeBalloonCancelled", "DumbModeBalloonProceededToActions", "ShowUsagesPopupShowSettings" ]
+        "__event_id" : [ "ProgressPaused", "ProgressResumed", "NavBarShowPopup", "NavBarNavigate", "BreadcrumbShowTooltip", "BreadcrumbNavigate", "DumbModeDialogWasNotNeeded", "DumbModeDialogRequested", "DumbModeDialogShown", "DumbModeDialogCancelled", "DumbModeDialogFinished", "DumbModeDialogProceededToActions", "IncrementalSearchActivated", "IncrementalSearchKeyTyped", "IncrementalSearchCancelled", "IncrementalSearchNextPrevItemSelected", "DumbModeBalloonWasNotNeeded", "DumbModeBalloonRequested", "DumbModeBalloonShown", "DumbModeBalloonCancelled", "DumbModeBalloonProceededToActions", "ShowUsagesPopupShowSettings", "LookupExecuteElementAction", "ToolWindowsWidgetPopupClicked", "ToolWindowsWidgetPopupShown", "LookupShowElementActions", "ImplementationViewComboBoxSelected", "ImplementationViewToolWindowOpened", "DaemonEditorPopupInvoked", "HectorPopupDisplayed" ]
       }
     }
   }, {
@@ -3169,7 +3238,7 @@
     "rules" : {
       "event_id" : [ "{enum#_}", "{enum:tip.shown|dialog.shown|next.tip|previous.tip}" ],
       "event_data" : {
-        "algorithm" : [ "{enum#__algorithm}" ],
+        "algorithm" : [ "{enum#__algorithm}", "{enum:ONE_TIP_SURROUNDWITH_SUMMER2020|ONE_TIP_EXTENDSELECTION_SUMMER2020|ONE_TIP_SWITCHER_SUMMER2020|LOCAL_SORT_SUMMER2020}" ],
         "feature_id" : [ "{util#tip_info}" ],
         "filename" : [ "{util#tip_info}" ],
         "plugin" : [ "{util#plugin}" ],
@@ -3206,6 +3275,7 @@
     "rules" : {
       "event_id" : [ "{enum#_}", "{enum:build|licencing}" ],
       "event_data" : {
+        "is_jb_team" : [ "{enum#boolean}" ],
         "metadata" : [ "{regexp#license_metadata}" ],
         "value" : [ "{enum#value}", "{enum:eap|release}", "{enum:evaluation|license}" ]
       },
@@ -3586,13 +3656,36 @@
         "start_time_ms" : [ "{regexp#integer}" ]
       }
     }
+  }, {
+    "id" : "welcomescreen.interaction",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "config_imported" : [ "{enum#boolean}" ],
+        "enabled" : [ "{enum#boolean}" ],
+        "first_start" : [ "{enum#boolean}" ],
+        "keymap_name" : [ "{enum#keymaps}" ],
+        "new_font_size" : [ "{regexp#integer}" ],
+        "old_font_size" : [ "{regexp#integer}" ],
+        "sync_os" : [ "{enum#boolean}" ],
+        "tab_type" : [ "{enum:TabNavProject|TabNavCustomize|TabNavPlugins|TabNavTutorials|TabNavOther}" ],
+        "theme_name" : [ "{enum#look_and_feel}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "color.blindness.changed", "editor.font.changed", "ide.font.changed", "keymap.changed", "laf.changed", "plugins.modified", "project.search", "screen.hidden", "screen.shown", "screen.tab.selected" ]
+      }
+    }
   } ],
   "rules" : {
     "enums" : {
       "boolean" : [ "true", "false", "TRUE", "FALSE" ],
       "build_tools" : [ "Maven", "Gradle", "gradle", "sbt", "Clojure_Deps", "clojure_deps", "Pants", "pants", "bsp", "Kobalt", "kobalt", "undefined.system", "third.party", "SPM", "CompDB", "Compilation_Database", "Makefile" ],
-      "keymaps" : [ "Mac_OS_X_10.5+", "$$default", "Default_for_GNOME", "Rider", "Eclipse", "Emacs", "Default_for_KDE", "Mac_OS_X", "ReSharper_OSX", "NetBeans_6.5", "Visual_Studio", "Rider_OSX", "TextMate", "Eclipse_(Mac_OS_X)", "ReSharper", "Xcode", "unknown", "custom", "Sublime_Text_(Mac_OS_X)", "Sublime_Text", "Default_for_XWin", "$default", "JBuilder", "VS_Code", "Visual_Studio_OSX", "Visual_Assist", "VSCode" ],
-      "look_and_feel" : [ "Darcula", "IntelliJ", "Light", "High_contrast", "Dark_purple", "Cyan_light", "Rider_Dark", "Gray", "macOS_Light", "IntelliJ_Light", "Windows_10_Light", "Solarized_Dark", "Solarized_Light", "Monocai", "Xcode-Dark", "vuesion-theme", "Visual_Studio_Code_Dark_Plus", "Monokai_Pro", "Monokai_Pro_(Filter_Spectrum)", "Monokai_Pro_(Filter_Machine)", "Monokai_Pro_(Filter_Octagon)", "Monokai_Pro_(Filter_Ristretto)", "Atom_One_Dark", "NotReallyMDTheme", "Darcula_Darker", "Espresso_Light", "Spacegray" ],
+      "keymaps" : [ "Mac_OS_X_10.5+", "$$default", "Default_for_GNOME", "Rider", "Eclipse", "Emacs", "Default_for_KDE", "Mac_OS_X", "ReSharper_OSX", "NetBeans_6.5", "Visual_Studio", "Rider_OSX", "TextMate", "Eclipse_(Mac_OS_X)", "ReSharper", "Xcode", "unknown", "custom", "Sublime_Text_(Mac_OS_X)", "Sublime_Text", "Default_for_XWin", "$default", "JBuilder", "VS_Code", "Visual_Studio_OSX", "Visual_Assist", "VSCode", "macOS_System_Shortcuts" ],
+      "look_and_feel" : [ "Darcula", "IntelliJ", "Light", "High_contrast", "Dark_purple", "Cyan_light", "Rider_Dark", "Gray", "macOS_Light", "IntelliJ_Light", "Windows_10_Light", "Solarized_Dark", "Solarized_Light", "Monocai", "Xcode-Dark", "vuesion-theme", "Visual_Studio_Code_Dark_Plus", "Monokai_Pro", "Monokai_Pro_(Filter_Spectrum)", "Monokai_Pro_(Filter_Machine)", "Monokai_Pro_(Filter_Octagon)", "Monokai_Pro_(Filter_Ristretto)", "Atom_One_Dark", "NotReallyMDTheme", "Darcula_Darker", "Espresso_Light", "Spacegray", "Gradianto_Nature_Green", "Nord", "Obsidian", "Obsidian_Bright", "One_Dark", "Roboticket_Light", "Sublime", "Trash_Panda_Theme" ],
       "os" : [ "Windows", "Mac", "Linux", "FreeBSD", "Other" ],
       "plugin_type" : [ "PLATFORM", "JB_BUNDLED", "JB_NOT_BUNDLED", "LISTED", "NOT_LISTED", "UNKNOWN" ],
       "state" : [ "enabled", "disabled" ],
@@ -3610,5 +3703,5 @@
       "version" : "(\\d+\\.?)*\\d+"
     }
   },
-  "version" : "1524"
+  "version" : "1557"
 }
